@@ -26,11 +26,14 @@
 	);
 	$inspect(textareaValue);
 
+	let error = $state(null);
+
 	function replaceCat(input: string) {
 		return input.split('').map((char) => {
 			const cat = catsBfMap[char];
 			if (cat == null) {
-				throw new Error(`Invalid character: ${char}`);
+				error = new Error(`Invalid character: ${char}`);
+				return;
 			}
 			return cat;
 		});
@@ -44,9 +47,13 @@
 			class="h-32 w-1/2 border-solid border-zinc-900"
 			placeholder="Type your bf code here"
 			bind:value={textareaValue} />
-		<p class="text-4xl font-bold">
-			Result: {executeBrainfuck(textareaValue)}
-		</p>
+		{#if error != null}
+			<p class="text-red">{error}</p>
+		{:else}
+			<p class="text-4xl font-bold">
+				Result: {executeBrainfuck(textareaValue)}
+			</p>
+		{/if}
 	</div>
 	<div class="flex flex-wrap">
 		{#each replaceCat(textareaValue) as cat}
