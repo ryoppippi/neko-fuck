@@ -95,28 +95,28 @@ if (import.meta.vitest) {
 	describe('bf', () => {
 		it('abc', () => {
 			const code = '++++++++[>++++++++<-]>+.+.+.' as const;
-			expect(executeBrainfuck(code), 'abc');
+			expect(executeBrainfuck(code)).toBe('ABC');
 		});
 
 		it('hello world', () => {
 			const code =
 				'+++++++++[>++++++++<-]>.<+++++++++[>+++<-]>++.+++++++..+++.<+++++++++[>--------<-]>-------.<+++++++++[>++++++<-]>+.<+++++++++[>++<-]>++++++.+++.------.--------.<+++++++++[>-------<-]>----.<+++++++++[>++++++<-]>+++++.<+++++++++[>++<-]>.' as const;
-			expect(executeBrainfuck(code), 'hello world');
+			expect(executeBrainfuck(code)).toBe('Hello World!\\n');
 		});
 
 		it('3', () => {
 			const code = '+++++++++[>+++++<-]>++++++.' as const;
-			expect(executeBrainfuck(code), '3');
+			expect(executeBrainfuck(code)).toBe('3');
 		});
 
 		it('8', () => {
 			const code = '+++++++++[>++++++<-]>++.' as const;
-			expect(executeBrainfuck(code), '8');
+			expect(executeBrainfuck(code)).toBe('8');
 		});
 
 		it('0123456789', () => {
 			const code = '++++++[>++++++++<-]++++++++++[>.+<-]' as const;
-			expect(executeBrainfuck(code), '0123456789');
+			expect(executeBrainfuck(code)).toBe('0123456789');
 		});
 	});
 }
