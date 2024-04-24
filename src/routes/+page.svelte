@@ -88,7 +88,7 @@
 
 	<div>
 		<div class="grid place-items-center">
-			<h1>write your brainfuck here👇</h1>
+			<h1>write your brainf**k code here👇</h1>
 			<textarea
 				class="textarea textarea-bordered h-32 w-3/4"
 				placeholder="Type your bf code here"
