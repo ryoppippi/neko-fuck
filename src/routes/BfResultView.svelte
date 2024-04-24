@@ -9,4 +9,3 @@
 <p class="whitespace-pre-line text-4xl font-bold">
 	Result: {convertChar(bfResult)}
 </p>
-

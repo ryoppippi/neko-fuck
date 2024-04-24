@@ -15,19 +15,20 @@
 		const audioElement = elements.get(bfchar) as HTMLAudioElement;
 
 		/** stop other elements */
-		stopAllAudio();
+		for (const [_, element] of elements) {
+			if (element !== audioElement) {
+				element.pause();
+				element.currentTime = 0;
+			}
+		}
+
+		audioElement.currentTime = 0;
 
 		audioElement.play();
-		await delay(2000);
-		audioElement.pause();
-	}
-
-	/** stop all audio */
-	export function stopAllAudio() {
-		elements.forEach((element) => {
-			element.pause();
-			element.currentTime = 0;
-		});
+		// await delay(2000);
+		// if (!audioElement.paused) {
+		// 	audioElement.pause();
+		// }
 	}
 </script>
 
@@ -65,6 +66,6 @@
 			src={cat}
 			controls
 			oncanplay={({ currentTarget }) => elements.set(u.ensure(key, isCatsBfMapKey), currentTarget as HTMLAudioElement)}
-			hidden></audio>
+		></audio>
 	{/each}
 {/if}
