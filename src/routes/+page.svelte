@@ -15,12 +15,6 @@
 	let textareaValuePrevious = $state('');
 	let bfResult = $state('');
 
-	/** initialize textareaValue */
-	$effect(() => {
-		textareaValue = bfEx.hoge;
-		textareaValuePrevious = bfEx.hoge;
-	});
-
 	$effect(() => {
 		try {
 			bfResult = executeBrainfuck(textareaValue);
