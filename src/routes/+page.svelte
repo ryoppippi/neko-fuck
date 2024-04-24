@@ -1,4 +1,5 @@
 <script lang="ts">
+	import * as u from '@core/unknownutil';
 	import girlfriendCat from '$lib/assets/cat_meme/Girlfriend猫.gif';
 	import happyCat from '$lib/assets/cat_meme/happyhappy猫.gif';
 	import noisyGoat from '$lib/assets/cat_meme/noisyGoat.gif';
@@ -9,7 +10,8 @@
 	import sleepingCat from '$lib/assets/cat_meme/爆睡猫.gif';
 	import laughingDog from '$lib/assets/cat_meme/爆笑犬.gif';
 
-	import { executeBrainfuck } from '$lib/bf.js';
+	import { executeBrainfuck, isBfChar } from '$lib/bf';
+	import * as bfEx from '$lib/bf/examples';
 
 	const catsBfMap = {
 		'>': angryCat,
@@ -22,22 +24,17 @@
 		'[': noisyGoat
 	} as const;
 
-	let textareaValue = $state(
-		'+++++++++[>++++++++<-]>.<+++++++++[>+++<-]>++.+++++++..+++.<+++++++++[>--------<-]>-------.<+++++++++[>++++++<-]>+.<+++++++++[>++<-]>++++++.+++.------.--------.<+++++++++[>-------<-]>----.<+++++++++[>++++++<-]>+++++.<+++++++++[>++<-]>.'
-	);
-	$inspect(textareaValue);
+	let textareaValue = $state(bfEx.helloWorld);
+	let bfResult = $state('');
+	$effect(() => {
+		bfResult = executeBrainfuck(textareaValue);
+	});
+	$inspect({ textareaValue, bfResult });
 
 	let error = $state(null);
 
 	function replaceCat(input: string) {
-		return input.split('').map((char) => {
-			const cat = catsBfMap[char];
-			if (cat == null) {
-				error = new Error(`Invalid character: ${char}`);
-				return;
-			}
-			return cat;
-		});
+		return input.split('').map((char) => (isBfChar(char) ? catsBfMap[char] : laughingDog));
 	}
 </script>
 
@@ -47,18 +44,21 @@
 		<textarea
 			class="h-32 w-1/2 border-solid border-zinc-900"
 			placeholder="Type your bf code here"
-			bind:value={textareaValue} />
+			bind:value={textareaValue}>
+		</textarea>
 		{#if error != null}
 			<p class="text-red">{error}</p>
 		{:else}
 			<p class="text-4xl font-bold">
-				Result: {executeBrainfuck(textareaValue)}
+				Result: {bfResult}
 			</p>
 		{/if}
 	</div>
-	<div class="flex flex-wrap">
-		{#each replaceCat(textareaValue) as cat}
-			<img src={cat} alt="cat-{cat}" class="h-12 flex-shrink-0" />
-		{/each}
-	</div>
+	{#each textareaValue.split('\n') as line}
+		<div class="flex flex-wrap">
+			{#each replaceCat(line) as cat}
+				<img src={cat} alt="cat-{cat}" class="h-12 flex-shrink-0" />
+			{/each}
+		</div>
+	{/each}
 </main>
