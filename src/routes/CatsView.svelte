@@ -25,14 +25,16 @@
 	} as const satisfies Record<BfChar, string>;
 
 	function replaceCat(input: string) {
-		return input.split('').map((char) => (isBfChar(char) ? catsBfMap[char] : laughingDog));
+		return input.split('').map((char) => (isBfChar(char) ? [char, catsBfMap[char]] : ['?', laughingDog]));
 	}
 </script>
 
 {#each inputText.split('\n') as line}
 	<div class="flex flex-wrap">
-		{#each replaceCat(line) as cat}
-			<img src={cat} alt="cat-{cat}" class="h-12 flex-shrink-0" />
+		{#each replaceCat(line) as [key, cat]}
+			<div class="tooltip lg:tooltip-info" data-tip={key}>
+				<img src={cat} alt="cat-{key}" class="h-12 flex-shrink-0" />
+			</div>
 		{/each}
 	</div>
 {/each}

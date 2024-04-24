@@ -85,6 +85,12 @@
 	<div>
 		<div class="grid place-items-center">
 			<h1>write your brainf**k code here👇</h1>
+			<h2>
+				you can use the following characters:
+				{#each ['>', '<', '+', '-', '.', ',', '[', ']'] as c}
+					<span class="mx-1 font-bold">{c}</span>
+				{/each}
+			</h2>
 			<textarea
 				class="textarea textarea-bordered h-32 w-3/4"
 				placeholder="Type your bf code here"
