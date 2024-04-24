@@ -7,10 +7,12 @@
 </script>
 
 <div class="flex justify-center">
-	<div>
-		<p>Result👇</p>
-		<p class="whitespace-pre-line text-2xl font-bold">
-			{convertChar(bfResult)}
-		</p>
+	<div class="card w-96 shadow-md">
+		<div class="card-body">
+			<h2 class="card-title">Result👇</h2>
+			<p class="f whitespace-pre-line rounded-box text-2xl font-bold">
+				{convertChar(bfResult)}
+			</p>
+		</div>
 	</div>
 </div>

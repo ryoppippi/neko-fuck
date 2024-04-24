@@ -90,9 +90,7 @@
 		</div>
 
 		<div>
-			{#if bfResult != ''}
-				<BfResultView {bfResult} />
-			{/if}
+			<BfResultView {bfResult} />
 		</div>
 
 		<article class="grid place-items-center pt-3">
