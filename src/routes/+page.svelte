@@ -7,6 +7,7 @@
 	import feelBlueCat from '$lib/assets/cat_meme/叱られる猫.gif';
 	import dubidubidibuCat from '$lib/assets/cat_meme/Dubidubidu猫.gif';
 	import sleepingCat from '$lib/assets/cat_meme/爆睡猫.gif';
+	import laughingDog from '$lib/assets/cat_meme/爆笑犬.gif';
 
 	import { executeBrainfuck } from '$lib/bf.js';
 
