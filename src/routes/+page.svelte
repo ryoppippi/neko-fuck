@@ -23,7 +23,6 @@
 		}
 
 		const diff = diffChars(textareaValuePrevious, textareaValue);
-		console.log(diff);
 		diff.forEach((part: any) => {
 			if (part.added != null) {
 				const c = part.value.at(0);
