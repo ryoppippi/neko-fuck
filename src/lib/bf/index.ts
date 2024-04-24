@@ -4,7 +4,7 @@ export const bfChars = ['>', '<', '+', '-', '.', ',', '[', ']'] as const satisfi
 export const isBfChar = u.isLiteralOneOf(bfChars);
 export type BfChar = u.PredicateType<typeof isBfChar>;
 
-export function generateJumpMap(code: string[]) {
+function generateJumpMap(code: string[]) {
 	const jumpStack: number[] = [];
 	const jumpMap = new Map<number, number>();
 
