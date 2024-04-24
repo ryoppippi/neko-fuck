@@ -6,6 +6,11 @@
 	}
 </script>
 
-<p class="whitespace-pre-line text-4xl font-bold">
-	Result: {convertChar(bfResult)}
-</p>
+<div class="flex justify-center">
+	<div>
+		<p>Result👇</p>
+		<p class="whitespace-pre-line text-2xl font-bold">
+			{convertChar(bfResult)}
+		</p>
+	</div>
+</div>

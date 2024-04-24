@@ -18,6 +18,7 @@
     "@types/diff": "^5.2.0",
     "autoprefixer": "^10.4.19",
     "await-to-js": "^3.0.0",
+    "daisyui": "^4.10.2",
     "delay": "^6.0.0",
     "diff": "^5.2.0",
     "postcss": "^8.4.38",

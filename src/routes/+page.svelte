@@ -4,6 +4,8 @@
 
 	import CatsView from './CatsView.svelte';
 	import BfResultView from './BfResultView.svelte';
+	import NavBar from './NavBar.svelte';
+
 	import CatsAudio, { playAudio } from './CatsAudio.svelte';
 	import { diffChars } from 'diff';
 	import delay from 'delay';
@@ -70,35 +72,56 @@
 			await delay(randomTime);
 			previoutChar = c;
 		}
+		typingString = undefined;
 	}
 </script>
 
+{#snippet exampleButton(typingText: string, tagText: string)}
+	<button class="btn join-item" class:btn-disabled={typingString != null} onclick={() => typing(typingText)}>
+		{#if typingString === typingText}
+			<span class="loading loading-spinner"></span>
+		{/if}
+		{tagText}</button>
+{/snippet}
 <main>
-	<div hidden>
-		<CatsAudio />
-	</div>
+	<NavBar />
 
-	<div class="pb-16">
-		<p>input brainfuck here👇</p>
-		<textarea
-			class="h-32 w-1/2 border-solid border-zinc-900"
-			placeholder="Type your bf code here"
-			bind:value={textareaValue}>
-		</textarea>
-		<div class="flex flex-row gap-3">
-			Example:
-			<button onclick={() => typing(bfEx.hoge)} disabled={typingString != null}>hoge</button>
-			<button onclick={() => typing(bfEx.helloWorld)} disabled={typingString != null}>Hello World</button>
-			<button onclick={() => (typingString = undefined)} hidden={typingString == null}>Stop</button>
-			<!-- <button>Hello World</button> -->
+	<div>
+		<div class="grid place-items-center">
+			<h1>write your brainfuck here👇</h1>
+			<textarea
+				class="textarea textarea-bordered h-32 w-3/4"
+				placeholder="Type your bf code here"
+				bind:value={textareaValue}>
+			</textarea>
 		</div>
+
 		<div>
 			{#if bfResult != ''}
 				<BfResultView {bfResult} />
 			{/if}
 		</div>
+
+		<article class="grid place-items-center pt-3">
+			<p class="join">You can see some examples here👇</p>
+			<button
+				class="btn btn-error btn-sm"
+				class:hidden={typingString == null}
+				onclick={() => (typingString = undefined)}>Stop</button>
+
+			<div class="join">
+				{@render exampleButton(bfEx.hoge, 'hoge')}
+				{@render exampleButton(bfEx.helloWorld, 'Hello World')}
+			</div>
+		</article>
 	</div>
+
+	<div class="divider"></div>
 	<div>
-		<CatsView inputText={textareaValue} />
+		<p class="flex justify-center pb-5 text-2xl font-bold">Cats</p>
+
+		<div class="mx-3"><CatsView inputText={textareaValue} /></div>
 	</div>
 </main>
+
+<div hidden><CatsAudio /></div>
