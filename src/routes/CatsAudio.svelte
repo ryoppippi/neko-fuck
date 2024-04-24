@@ -1,6 +1,5 @@
 <script context="module" lang="ts">
 	import * as u from '@core/unknownutil';
-	import delay from 'delay';
 
 	const isCatsBfMapKey = u.isUnionOf([isBfChar, u.isLiteralOf('*')]);
 	type CatsBfMapKey = u.PredicateType<typeof isCatsBfMapKey>;
@@ -25,10 +24,13 @@
 		audioElement.currentTime = 0;
 
 		audioElement.play();
-		// await delay(2000);
-		// if (!audioElement.paused) {
-		// 	audioElement.pause();
-		// }
+	}
+
+	export async function stopAllAudio() {
+		for (const [_, element] of elements) {
+			element.pause();
+			element.currentTime = 0;
+		}
 	}
 </script>
 

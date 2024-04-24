@@ -6,7 +6,7 @@
 	import BfResultView from './BfResultView.svelte';
 	import NavBar from './NavBar.svelte';
 
-	import CatsAudio, { playAudio } from './CatsAudio.svelte';
+	import CatsAudio, { playAudio, stopAllAudio } from './CatsAudio.svelte';
 	import { diffChars } from 'diff';
 	import delay from 'delay';
 
@@ -37,6 +37,9 @@
 				} else {
 					playAudio('*');
 				}
+			}
+			if (part.removed) {
+				stopAllAudio();
 			}
 		});
 
