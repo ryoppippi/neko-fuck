@@ -1,22 +1,25 @@
-export function executeBrainfuck(code: string, input: () => number | null = () => null): string {
-	let memory: number[] = [];
-	let pointer: number = 0;
-	let output: string = '';
+import * as u from '@core/unknownutil';
 
-	let jumpStack: number[] = [];
-	let jumpMap: Record<number, number> = {};
+export const bfChars = ['>', '<', '+', '-', '.', ',', '[', ']'] as const satisfies readonly string[];
+export const isBfChar = u.isLiteralOneOf(bfChars);
+export type BfChar = u.PredicateType<typeof isBfChar>;
 
-	// ジャンプマップの構築
-	Array.from(code).forEach((c, index) => {
+export function generateJumpMap(code: string[]) {
+	const jumpStack: number[] = [];
+	const jumpMap = new Map<number, number>();
+
+	/** Generate jumpMap */
+	code.forEach((c, index) => {
 		if (c === '[') {
 			jumpStack.push(index);
-		} else if (c === ']') {
+		}
+		if (c === ']') {
 			let start = jumpStack.pop();
 			if (start == null) {
 				throw new Error('Syntax Error: `]` with no matching `[');
 			}
-			jumpMap[start] = index;
-			jumpMap[index] = start;
+			jumpMap.set(start, index);
+			jumpMap.set(index, start);
 		}
 	});
 
@@ -24,20 +27,33 @@ export function executeBrainfuck(code: string, input: () => number | null = () =
 		throw new Error('Syntax Error: `[` with no matching `]');
 	}
 
+	return jumpMap;
+}
+
+export function executeBrainfuck(code: string, input: () => number | null = () => null) {
+	const trimedCode = code.trim();
+	const codeArray = Array.from(trimedCode);
+
+	const memory: number[] = [];
+	let pointer: number = 0;
+	let output: string = '';
+
+	const jumpMap = generateJumpMap(codeArray);
+
 	let i = 0;
-	while (i < code.length) {
-		let command = code.at(i);
+	while (i < codeArray.length) {
+		const command = codeArray.at(i);
 		if (command == null) {
 			break;
 		}
 
 		switch (command) {
 			case '>':
-				pointer++;
+				pointer += 1;
 				memory[pointer] = memory.at(pointer) ?? 0;
 				break;
 			case '<':
-				pointer--;
+				pointer -= 1;
 				if (pointer < 0 || memory.at(pointer) == null) {
 					throw new Error('Memory Error: Pointer moved out of valid range.');
 				}
@@ -52,21 +68,23 @@ export function executeBrainfuck(code: string, input: () => number | null = () =
 				output += String.fromCharCode(memory.at(pointer) ?? 0);
 				break;
 			case ',':
-				let nextInput = input();
+				const nextInput = input();
 				memory[pointer] = nextInput ?? memory.at(pointer) ?? 0;
 				break;
 			case '[':
 				if ((memory.at(pointer) ?? 0) === 0) {
-					i = jumpMap[i];
+					i = u.ensure(jumpMap.get(i), u.isNumber);
 				}
 				break;
 			case ']':
 				if ((memory.at(pointer) ?? 0) !== 0) {
-					i = jumpMap[i];
+					i = u.ensure(jumpMap.get(i), u.isNumber);
 				}
 				break;
+			default:
+				break;
 		}
-		i++;
+		i += 1;
 	}
 
 	return output;
@@ -94,6 +112,11 @@ if (import.meta.vitest) {
 		it('8', () => {
 			const code = '+++++++++[>++++++<-]>++.' as const;
 			expect(executeBrainfuck(code), '8');
+		});
+
+		it('0123456789', () => {
+			const code = '++++++[>++++++++<-]++++++++++[>.+<-]' as const;
+			expect(executeBrainfuck(code), '0123456789');
 		});
 	});
 }
