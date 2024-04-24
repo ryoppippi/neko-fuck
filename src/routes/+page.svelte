@@ -4,7 +4,6 @@
 
 	import CatsView from './CatsView.svelte';
 	import BfResultView from './BfResultView.svelte';
-	import NavBar from './NavBar.svelte';
 
 	import CatsAudio, { playAudio, stopAllAudio } from './CatsAudio.svelte';
 	import { diffChars } from 'diff';
@@ -80,8 +79,6 @@
 		{tagText}</button>
 {/snippet}
 <main>
-	<NavBar />
-
 	<div>
 		<div class="grid place-items-center">
 			<h1>write your brainf**k code here👇</h1>
