@@ -8,7 +8,6 @@
 
 	/** play audio from beginning */
 	export async function playAudio(bfchar: CatsBfMapKey) {
-		console.log({ elements });
 		u.assert(bfchar, isCatsBfMapKey);
 
 		const audioElement = elements.get(bfchar) as HTMLAudioElement;
