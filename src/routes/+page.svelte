@@ -1,11 +1,12 @@
 <script lang="ts">
-	import { executeBrainfuck, isBfChar } from '$lib/bf';
+	import { executeBrainfuck } from '$lib/bf';
 	import * as bfEx from '$lib/bf/examples';
 
 	import CatsView from './CatsView.svelte';
 	import BfResultView from './BfResultView.svelte';
-
 	import CatsAudio, { playAudio, stopAllAudio } from './CatsAudio.svelte';
+
+	import * as u from '@core/unknownutil';
 	import { diffChars } from 'diff';
 	import delay from 'delay';
 
@@ -25,17 +26,17 @@
 		diff.forEach((part: any) => {
 			if (part.added != null) {
 				const c = part.value.at(0);
+
 				if (c == null) {
 					return;
 				}
+
+				u.assert(c, u.isString);
+
 				if (c === '\n') {
 					return;
 				}
-				if (isBfChar(c)) {
-					playAudio(c);
-				} else {
-					playAudio('*');
-				}
+				playAudio(c);
 			}
 			if (part.removed) {
 				stopAllAudio();

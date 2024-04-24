@@ -1,14 +1,13 @@
 <script context="module" lang="ts">
 	import * as u from '@core/unknownutil';
-
-	const isCatsBfMapKey = u.isUnionOf([isBfChar, u.isLiteralOf('*')]);
-	type CatsBfMapKey = u.PredicateType<typeof isCatsBfMapKey>;
+	import { isCatsBfMapKey, type CatsBfMapKey } from '$lib/types';
+	import { isBfChar } from '$lib/bf';
 
 	const elements = new Map<CatsBfMapKey, HTMLAudioElement>();
 
 	/** play audio from beginning */
-	export async function playAudio(bfchar: CatsBfMapKey) {
-		u.assert(bfchar, isCatsBfMapKey);
+	export async function playAudio(char: string) {
+		const bfchar = (u.maybe(char, isBfChar) ?? '👻') satisfies CatsBfMapKey;
 
 		const audioElement = elements.get(bfchar) as HTMLAudioElement;
 
@@ -45,7 +44,6 @@
 	import laughingDog from '$lib/assets/cat_meme/爆笑犬.webm';
 
 	import type { Entries } from 'type-fest';
-	import { isBfChar } from '$lib/bf';
 	import { browser } from '$app/environment';
 
 	const catsBfMap = {
@@ -57,7 +55,7 @@
 		',': girlfriendCat,
 		']': haCat,
 		'[': noisyGoat,
-		'*': laughingDog
+		'👻': laughingDog
 	} as const satisfies Record<CatsBfMapKey, string>;
 </script>
 

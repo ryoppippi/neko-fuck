@@ -9,7 +9,9 @@
 	import sleepingCat from '$lib/assets/cat_meme/爆睡猫.gif';
 	import laughingDog from '$lib/assets/cat_meme/爆笑犬.gif';
 
-	import { type BfChar, isBfChar } from '$lib/bf';
+	import * as u from '@core/unknownutil';
+	import { isBfChar } from '$lib/bf';
+	import type { CatsBfMapKey } from '$lib/types';
 
 	const { inputText } = $props<{ inputText: string }>();
 
@@ -21,11 +23,15 @@
 		'.': happyCat,
 		',': girlfriendCat,
 		']': haCat,
-		'[': noisyGoat
-	} as const satisfies Record<BfChar, string>;
+		'[': noisyGoat,
+		'👻': laughingDog
+	} as const satisfies Record<CatsBfMapKey, string>;
 
 	function replaceCat(input: string) {
-		return input.split('').map((char) => (isBfChar(char) ? [char, catsBfMap[char]] : ['?', laughingDog]));
+		return input.split('').map((char) => {
+			const bfchar = (u.maybe(char, isBfChar) ?? '👻') satisfies CatsBfMapKey;
+			return [bfchar, catsBfMap[bfchar]];
+		});
 	}
 </script>
 
