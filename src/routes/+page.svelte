@@ -103,6 +103,7 @@
 				onclick={() => (typingString = undefined)}>Stop</button>
 
 			<div class="join">
+				{@render exampleButton(bfEx.zero_z_zero_a, '0x0a')}
 				{@render exampleButton(bfEx.hoge, 'hoge')}
 				{@render exampleButton(bfEx.helloWorld, 'Hello World')}
 			</div>

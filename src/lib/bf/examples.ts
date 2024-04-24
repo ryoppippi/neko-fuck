@@ -21,3 +21,6 @@ export const helloWorld = `++++++++++
 <-.
 >>+.
 >>.`;
+
+export const zero_z_zero_a = `++++++++++.`;
+
