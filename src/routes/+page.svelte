@@ -6,23 +6,26 @@
 	import BfResultView from './BfResultView.svelte';
 	import CatsAudio, { playAudio, stopAllAudio } from './CatsAudio.svelte';
 
+	import { CurrentAndPreviousRune } from '$lib/rune.svelte.js';
+
 	import * as u from '@core/unknownutil';
 	import { diffChars } from 'diff';
 	import delay from 'delay';
 
 	/** define states */
-	let textareaValue = $state('');
-	let textareaValuePrevious = $state('');
-	let bfResult = $state('');
+	let textareaValue = new CurrentAndPreviousRune('');
+
+	/** parsed result by brainf**k compiler */
+	let bfResult = $derived.by(() => {
+		try {
+			return executeBrainfuck(u.ensure(textareaValue.current, u.isString));
+		} catch (e) {
+			return '';
+		}
+	});
 
 	$effect(() => {
-		try {
-			bfResult = executeBrainfuck(textareaValue);
-		} catch (e) {
-			bfResult = '';
-		}
-
-		const diff = diffChars(textareaValuePrevious, textareaValue);
+		const diff = diffChars(textareaValue.previous ?? '', u.ensure(textareaValue.current, u.isString));
 		diff.forEach((part: any) => {
 			if (part.added != null) {
 				const c = part.value.at(0);
@@ -42,9 +45,6 @@
 				stopAllAudio();
 			}
 		});
-
-		/** udpate textareaValuePrevious */
-		textareaValuePrevious = textareaValue;
 	});
 	$inspect({ textareaValue, bfResult });
 
@@ -54,7 +54,7 @@
 			return;
 		}
 		typingString = input;
-		textareaValue = '';
+		textareaValue.reset('');
 
 		let previoutChar = '';
 		await delay(1000);
@@ -62,7 +62,7 @@
 			if (typingString == null) {
 				return;
 			}
-			textareaValue += c;
+			textareaValue.current += c;
 
 			const randomTime = previoutChar !== c ? 1500 : (Math.round(Math.random() * 5) + 1) * 100;
 			await delay(randomTime);
@@ -92,7 +92,7 @@
 			<textarea
 				class="textarea textarea-bordered h-32 w-3/4"
 				placeholder="Type your bf code here"
-				bind:value={textareaValue}>
+				bind:value={textareaValue.current}>
 			</textarea>
 		</div>
 
@@ -119,7 +119,7 @@
 	<div>
 		<p class="flex justify-center pb-5 text-2xl font-bold">Cats</p>
 
-		<div class="mx-3"><CatsView inputText={textareaValue} /></div>
+		<div class="mx-3"><CatsView inputText={textareaValue.current} /></div>
 	</div>
 </main>
 
