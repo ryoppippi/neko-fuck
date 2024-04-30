@@ -9,6 +9,7 @@
 	import { CurrentAndPreviousRune } from '$lib/rune.svelte.js';
 
 	import * as u from '@core/unknownutil';
+	import { Try } from '@qnighy/metaflow/exception';
 	import { diffChars } from 'diff';
 	import delay from 'delay';
 
@@ -17,11 +18,11 @@
 
 	/** parsed result by brainf**k compiler */
 	let bfResult = $derived.by(() => {
-		try {
-			return executeBrainfuck(u.ensure(textareaValue.current, u.isString));
-		} catch (e) {
-			return '';
-		}
+		return Try(() => {
+			const { current } = textareaValue;
+			u.assert(current, u.isString);
+			return executeBrainfuck(current);
+		}).done(() => '');
 	});
 
 	$effect(() => {

@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@qnighy/metaflow':
+        specifier: npm:@jsr/qnighy__metaflow@^0.1.0
+        version: '@jsr/qnighy__metaflow@0.1.0'
     devDependencies:
       '@core/unknownutil':
         specifier: npm:@jsr/core__unknownutil@^3.18.0
@@ -284,6 +288,9 @@ packages:
 
   '@jsr/core__unknownutil@3.18.0':
     resolution: {integrity: sha512-s8gRaVnwQPIuPY4pzcNxNDSyULX07zETqWg/Fh5ZdarvUtGhi3GZLRqpx/8MuhwPU8AHzvNtENxuekma8gDKRA==, tarball: https://npm.jsr.io/~/8/@jsr/core__unknownutil/3.18.0.tgz}
+
+  '@jsr/qnighy__metaflow@0.1.0':
+    resolution: {integrity: sha512-47Sr2N2VFg/9As8XLJMXGmqSw4cGsJMSofL++SySN/bC1zypAxfp1L91yT7p49MzFehiGTcqEJJNcI0RnbRi5g==, tarball: https://npm.jsr.io/~/10/@jsr/qnighy__metaflow/0.1.0.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1687,6 +1694,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.4.15
 
   '@jsr/core__unknownutil@3.18.0': {}
+
+  '@jsr/qnighy__metaflow@0.1.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
