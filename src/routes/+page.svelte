@@ -26,7 +26,14 @@
 	});
 
 	$effect(() => {
-		const diff = diffChars(textareaValue.previous ?? '', u.ensure(textareaValue.current, u.isString));
+		const previousText = textareaValue.previous ?? '';
+		const currentText = textareaValue.current;
+
+		u.assert(previousText, u.isString);
+		u.assert(currentText, u.isString);
+
+		const diff = diffChars(previousText, currentText);
+
 		diff.forEach((part: any) => {
 			if (part.added != null) {
 				const c = part.value.at(0);
@@ -51,7 +58,7 @@
 
 	let typingString = $state<string | undefined>();
 	async function typing(input: string) {
-		if (typingString != null) {
+		if (!u.isNullish(typingString)) {
 			return;
 		}
 		typingString = input;
@@ -60,7 +67,7 @@
 		let previoutChar = '';
 		await delay(1000);
 		for (const c of input.split('')) {
-			if (typingString == null) {
+			if (u.isNullish(typingString)) {
 				return;
 			}
 			textareaValue.current += c;

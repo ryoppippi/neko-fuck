@@ -73,12 +73,16 @@ export function executeBrainfuck(code: string, input: () => number | null = () =
 				break;
 			case '[':
 				if ((memory.at(pointer) ?? 0) === 0) {
-					i = u.ensure(jumpMap.get(i), u.isNumber);
+					const jm = jumpMap.get(i);
+					u.assert(jm, u.isNumber);
+					i = jm;
 				}
 				break;
 			case ']':
 				if ((memory.at(pointer) ?? 0) !== 0) {
-					i = u.ensure(jumpMap.get(i), u.isNumber);
+					const jm = jumpMap.get(i);
+					u.assert(jm, u.isNumber);
+					i = jm;
 				}
 				break;
 			default:
