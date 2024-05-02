@@ -77,7 +77,7 @@ importers:
         version: 2.6.2
       type-fest:
         specifier: ^4.17.0
-        version: 4.17.0
+        version: 4.18.0
       typescript:
         specifier: ^5.0.0
         version: 5.4.5
@@ -287,7 +287,7 @@ packages:
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
   '@jsr/core__unknownutil@3.18.0':
-    resolution: {integrity: sha512-s8gRaVnwQPIuPY4pzcNxNDSyULX07zETqWg/Fh5ZdarvUtGhi3GZLRqpx/8MuhwPU8AHzvNtENxuekma8gDKRA==, tarball: https://npm.jsr.io/~/8/@jsr/core__unknownutil/3.18.0.tgz}
+    resolution: {integrity: sha512-uNIKCGCk1wt7uJfR7+H4unaSzJ6rFWRpeXA1m26/J/TgCnOh5zbJ99FjZPgkTg8FkOtSiejJabaKw1Xrm5wsZw==, tarball: https://npm.jsr.io/~/10/@jsr/core__unknownutil/3.18.0.tgz}
 
   '@jsr/qnighy__metaflow@0.1.0':
     resolution: {integrity: sha512-47Sr2N2VFg/9As8XLJMXGmqSw4cGsJMSofL++SySN/bC1zypAxfp1L91yT7p49MzFehiGTcqEJJNcI0RnbRi5g==, tarball: https://npm.jsr.io/~/10/@jsr/qnighy__metaflow/0.1.0.tgz}
@@ -1398,8 +1398,8 @@ packages:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
 
-  type-fest@4.17.0:
-    resolution: {integrity: sha512-9flrz1zkfLRH3jO3bLflmTxryzKMxVa7841VeMgBaNQGY6vH4RCcpN/sQLB7mQQYh1GZ5utT2deypMuCy4yicw==}
+  type-fest@4.18.0:
+    resolution: {integrity: sha512-+dbmiyliDY/2TTcjCS7NpI9yV2iEFlUDk5TKnsbkN7ZoRu5s7bT+zvYtNFhFXC2oLwURGT2frACAZvbbyNBI+w==}
     engines: {node: '>=16'}
 
   typescript-svelte-plugin@0.3.38:
@@ -2732,7 +2732,7 @@ snapshots:
 
   type-detect@4.0.8: {}
 
-  type-fest@4.17.0: {}
+  type-fest@4.18.0: {}
 
   typescript-svelte-plugin@0.3.38(svelte@5.0.0-next.115)(typescript@5.4.5):
     dependencies:
