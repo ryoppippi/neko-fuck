@@ -127,7 +127,7 @@
 	<div>
 		<p class="flex justify-center pb-5 text-2xl font-bold">Cats</p>
 
-		<div class="mx-3"><CatsView inputText={textareaValue.current} /></div>
+		<div class="mx-3"><CatsView inputText={textareaValue.current ?? ''} /></div>
 	</div>
 </main>
 

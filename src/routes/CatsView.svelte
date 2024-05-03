@@ -13,7 +13,8 @@
 	import { isBfChar } from '$lib/bf';
 	import type { CatsBfMapKey } from '$lib/types';
 
-	const { inputText } = $props<{ inputText: string }>();
+	type Props = { inputText: string };
+	const { inputText = $bindable('') }: Props = $props();
 
 	const catsBfMap = {
 		'>': angryCat,

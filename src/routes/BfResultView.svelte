@@ -1,5 +1,6 @@
 <script lang="ts">
-	const { bfResult } = $props<{ bfResult: string }>();
+	type Props = { bfResult: string };
+	let { bfResult }: Props = $props();
 
 	function convertChar(s: string) {
 		return s.replaceAll('\t', '▸▹┊').replaceAll('\n', '⤶\n');
