@@ -77,7 +77,7 @@ importers:
         version: 2.6.2
       type-fest:
         specifier: ^4.18.1
-        version: 4.18.1
+        version: 4.18.2
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -291,10 +291,10 @@ packages:
     engines: {node: '>=10'}
 
   '@jsr/core__unknownutil@3.18.0':
-    resolution: {integrity: sha512-uNIKCGCk1wt7uJfR7+H4unaSzJ6rFWRpeXA1m26/J/TgCnOh5zbJ99FjZPgkTg8FkOtSiejJabaKw1Xrm5wsZw==, tarball: https://npm.jsr.io/~/10/@jsr/core__unknownutil/3.18.0.tgz}
+    resolution: {integrity: sha512-l6BJIL7HJikCY5dKrSSQjl41b5zzZbxGLfasKN2gYW031hzD2t2yrJb2Qje6sDoiWPlM1ekT/hu/+yH8X1Aa3A==, tarball: https://npm.jsr.io/~/11/@jsr/core__unknownutil/3.18.0.tgz}
 
   '@jsr/qnighy__metaflow@0.1.0':
-    resolution: {integrity: sha512-47Sr2N2VFg/9As8XLJMXGmqSw4cGsJMSofL++SySN/bC1zypAxfp1L91yT7p49MzFehiGTcqEJJNcI0RnbRi5g==, tarball: https://npm.jsr.io/~/10/@jsr/qnighy__metaflow/0.1.0.tgz}
+    resolution: {integrity: sha512-N0bpQ9Mgj/P9dVa8VgMPXSIXREQLm9Qi9h+PnbuHhUO2GNQEqJQILu5938nEmiW6sN03+2ew294k1uW8zZSHLw==, tarball: https://npm.jsr.io/~/11/@jsr/qnighy__metaflow/0.1.0.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1409,8 +1409,8 @@ packages:
     resolution: {integrity: sha512-0fr/mIH1dlO+x7TlcMy+bIDqKPsw/70tVyeHW787goQjhmqaZe10uwLujubK9q9Lg6Fiho1KUKDYz0Z7k7g5/g==}
     engines: {node: '>=4'}
 
-  type-fest@4.18.1:
-    resolution: {integrity: sha512-qXhgeNsX15bM63h5aapNFcQid9jRF/l3ojDoDFmekDQEUufZ9U4ErVt6SjDxnHp48Ltrw616R8yNc3giJ3KvVQ==}
+  type-fest@4.18.2:
+    resolution: {integrity: sha512-+suCYpfJLAe4OXS6+PPXjW3urOS4IoP9waSiLuXfLgqZODKw/aWwASvzqE886wA0kQgGy0mIWyhd87VpqIy6Xg==}
     engines: {node: '>=16'}
 
   typescript-svelte-plugin@0.3.38:
@@ -2754,7 +2754,7 @@ snapshots:
 
   type-detect@4.0.8: {}
 
-  type-fest@4.18.1: {}
+  type-fest@4.18.2: {}
 
   typescript-svelte-plugin@0.3.38(svelte@5.0.0-next.123)(typescript@5.4.5):
     dependencies:
