@@ -49,7 +49,7 @@
 				}
 				playAudio(c);
 			}
-			if (part.removed) {
+			if (part.removed != null) {
 				stopAllAudio();
 			}
 		});
