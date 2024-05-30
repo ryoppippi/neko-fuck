@@ -17,7 +17,7 @@ importers:
         version: '@jsr/core__unknownutil@3.18.0'
       '@iconify-json/grommet-icons':
         specifier: ^1.1.10
-        version: 1.1.10
+        version: 1.1.11
       '@sveltejs/adapter-auto':
         specifier: ^3.2.0
         version: 3.2.1(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.0(svelte@5.0.0-next.141)(vite@5.2.11))(svelte@5.0.0-next.141)(vite@5.2.11))
@@ -251,8 +251,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@iconify-json/grommet-icons@1.1.10':
-    resolution: {integrity: sha512-0BZ7E0qAhrAUjduWYci/ys29vVtp5o6uNZK+7Df4bf02nO8xGi0xawn3VbqnxIq8T4fEcOMt043Zlo1mH7dnqg==}
+  '@iconify-json/grommet-icons@1.1.11':
+    resolution: {integrity: sha512-69RSSscQ9oDLO3Tq5PrOjiPiRldkhTy+IYEFjuTzubc5kWz0gxHPJYg/Jgkow7KAp6IqWrp99ioMCikD1UV54A==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1659,7 +1659,7 @@ snapshots:
   '@esbuild/win32-x64@0.20.2':
     optional: true
 
-  '@iconify-json/grommet-icons@1.1.10':
+  '@iconify-json/grommet-icons@1.1.11':
     dependencies:
       '@iconify/types': 2.0.0
 
