@@ -68,7 +68,7 @@ importers:
         version: 3.8.4(postcss-load-config@4.0.2(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.169)
       svelte-html-event:
         specifier: ^0.0.6
-        version: 0.0.6(svelte@5.0.0-next.169)(typescript@5.5.2)
+        version: 0.0.6(svelte@5.0.0-next.169)(typescript@5.5.3)
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.4
@@ -80,10 +80,10 @@ importers:
         version: 4.20.1
       typescript:
         specifier: ^5.4.5
-        version: 5.5.2
+        version: 5.5.3
       typescript-svelte-plugin:
         specifier: ^0.3.38
-        version: 0.3.39(svelte@5.0.0-next.169)(typescript@5.5.2)
+        version: 0.3.39(svelte@5.0.0-next.169)(typescript@5.5.3)
       unplugin-icons:
         specifier: ^0.19.0
         version: 0.19.0
@@ -1416,8 +1416,8 @@ packages:
   typescript-svelte-plugin@0.3.39:
     resolution: {integrity: sha512-7c6AAhoIIIGYmERtgeBfL40/nzG4ciPqbYXweRg+AvS8tG8q7kENLmaHK6BCnwmxATxxCTio02JTQZyZMP1XVg==}
 
-  typescript@5.5.2:
-    resolution: {integrity: sha512-NcRtPEOsPFFWjobJEtfihkLCZCXZt/os3zf8nTxjVH3RvTSxjrCamJpbExGvYOF+tFHc3pA65qpdwPbzjohhew==}
+  typescript@5.5.3:
+    resolution: {integrity: sha512-/hreyEujaB0w76zKo6717l3L0o/qEUtRgdvUBvlkhoWeOVMjMuHNHk0BRBzikzuGDqNmPQbg5ifMEqsHLiIUcQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -2629,8 +2629,8 @@ snapshots:
       picocolors: 1.0.1
       sade: 1.8.1
       svelte: 5.0.0-next.169
-      svelte-preprocess: 5.1.4(postcss-load-config@4.0.2(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.169)(typescript@5.5.2)
-      typescript: 5.5.2
+      svelte-preprocess: 5.1.4(postcss-load-config@4.0.2(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.169)(typescript@5.5.3)
+      typescript: 5.5.3
     transitivePeerDependencies:
       - '@babel/core'
       - coffeescript
@@ -2646,12 +2646,12 @@ snapshots:
     dependencies:
       svelte: 5.0.0-next.169
 
-  svelte-html-event@0.0.6(svelte@5.0.0-next.169)(typescript@5.5.2):
+  svelte-html-event@0.0.6(svelte@5.0.0-next.169)(typescript@5.5.3):
     dependencies:
       svelte: 5.0.0-next.169
-      typescript: 5.5.2
+      typescript: 5.5.3
 
-  svelte-preprocess@5.1.4(postcss-load-config@4.0.2(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.169)(typescript@5.5.2):
+  svelte-preprocess@5.1.4(postcss-load-config@4.0.2(postcss@8.4.39))(postcss@8.4.39)(svelte@5.0.0-next.169)(typescript@5.5.3):
     dependencies:
       '@types/pug': 2.0.10
       detect-indent: 6.1.0
@@ -2662,14 +2662,14 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.39
       postcss-load-config: 4.0.2(postcss@8.4.39)
-      typescript: 5.5.2
+      typescript: 5.5.3
 
-  svelte2tsx@0.7.10(svelte@5.0.0-next.169)(typescript@5.5.2):
+  svelte2tsx@0.7.10(svelte@5.0.0-next.169)(typescript@5.5.3):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 5.0.0-next.169
-      typescript: 5.5.2
+      typescript: 5.5.3
 
   svelte@5.0.0-next.169:
     dependencies:
@@ -2747,15 +2747,15 @@ snapshots:
 
   type-fest@4.20.1: {}
 
-  typescript-svelte-plugin@0.3.39(svelte@5.0.0-next.169)(typescript@5.5.2):
+  typescript-svelte-plugin@0.3.39(svelte@5.0.0-next.169)(typescript@5.5.3):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
-      svelte2tsx: 0.7.10(svelte@5.0.0-next.169)(typescript@5.5.2)
+      svelte2tsx: 0.7.10(svelte@5.0.0-next.169)(typescript@5.5.3)
     transitivePeerDependencies:
       - svelte
       - typescript
 
-  typescript@5.5.2: {}
+  typescript@5.5.3: {}
 
   ufo@1.5.3: {}
 
