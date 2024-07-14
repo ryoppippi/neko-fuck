@@ -1,8 +1,11 @@
-import * as u from '@core/unknownutil';
+import typia from 'typia';
+import type { ArrayValues } from 'type-fest';
 
 export const bfChars = ['>', '<', '+', '-', '.', ',', '[', ']'] as const satisfies readonly string[];
-export const isBfChar = u.isLiteralOneOf(bfChars);
-export type BfChar = u.PredicateType<typeof isBfChar>;
+export type BFChar = ArrayValues<typeof bfChars>;
+export const isBfChar = typia.createEquals<BFChar>();
+
+const assertGuardNumber = typia.createAssertGuard<number>();
 
 function generateJumpMap(code: string[]) {
 	const jumpStack: number[] = [];
@@ -74,18 +77,19 @@ export function executeBrainfuck(code: string, input: () => number | null = () =
 			case '[':
 				if ((memory.at(pointer) ?? 0) === 0) {
 					const jm = jumpMap.get(i);
-					u.assert(jm, u.isNumber);
+					typia.assertGuard<number>(jm);
 					i = jm;
 				}
 				break;
 			case ']':
 				if ((memory.at(pointer) ?? 0) !== 0) {
 					const jm = jumpMap.get(i);
-					u.assert(jm, u.isNumber);
+					typia.assertGuard<number>(jm);
 					i = jm;
 				}
 				break;
 			default:
+				command satisfies never;
 				break;
 		}
 		i += 1;

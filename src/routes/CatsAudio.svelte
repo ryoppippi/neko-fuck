@@ -1,13 +1,12 @@
 <script context="module" lang="ts">
-	import * as u from '@core/unknownutil';
-	import { isCatsBfMapKey, type CatsBfMapKey } from '$lib/types';
-	import { isBfChar } from '$lib/bf';
+	import { ghostChar, isCatsBfMapKey, type CatsBfMapKey } from '$lib/types';
+	import { isBfChar, type BFChar } from '$lib/bf';
 
 	const elements = new Map<CatsBfMapKey, HTMLAudioElement>();
 
 	/** play audio from beginning */
 	export async function playAudio(char: string) {
-		const bfchar = (u.maybe(char, isBfChar) ?? '👻') satisfies CatsBfMapKey;
+		const bfchar = (isBfChar(char) ? char : ghostChar) satisfies CatsBfMapKey;
 
 		const audioElement = elements.get(bfchar) as HTMLAudioElement;
 
@@ -61,10 +60,7 @@
 
 {#if browser}
 	{#each Object.entries(catsBfMap) as Entries<typeof catsBfMap> as [key, cat]}
-		<audio
-			src={cat}
-			controls
-			oncanplay={({ currentTarget }) => elements.set(u.ensure(key, isCatsBfMapKey), currentTarget as HTMLAudioElement)}
+		<audio src={cat} controls oncanplay={({ currentTarget }) => elements.set(key, currentTarget as HTMLAudioElement)}
 		></audio>
 	{/each}
 {/if}

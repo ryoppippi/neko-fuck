@@ -1,5 +1,8 @@
-import * as u from '@core/unknownutil';
-import { isBfChar } from './bf/index.js';
+import typia from 'typia';
+import type { BFChar } from './bf/index.js';
 
-export const isCatsBfMapKey = u.isUnionOf([isBfChar, u.isLiteralOf('👻')]);
-export type CatsBfMapKey = u.PredicateType<typeof isCatsBfMapKey>;
+export const ghostChar = `👻`;
+export type GhostChar = typeof ghostChar;
+
+export type CatsBfMapKey = BFChar | GhostChar;
+export const isCatsBfMapKey = typia.createEquals<CatsBfMapKey>();
