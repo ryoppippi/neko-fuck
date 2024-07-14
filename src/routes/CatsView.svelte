@@ -9,9 +9,8 @@
 	import sleepingCat from '$lib/assets/cat_meme/爆睡猫.gif';
 	import laughingDog from '$lib/assets/cat_meme/爆笑犬.gif';
 
-	import * as u from '@core/unknownutil';
 	import { isBfChar } from '$lib/bf';
-	import type { CatsBfMapKey } from '$lib/types';
+	import { ghostChar, type CatsBfMapKey } from '$lib/types';
 
 	type Props = { inputText: string };
 	const { inputText = $bindable('') }: Props = $props();
@@ -30,7 +29,7 @@
 
 	function replaceCat(input: string) {
 		return input.split('').map((char) => {
-			const bfchar = (u.maybe(char, isBfChar) ?? '👻') satisfies CatsBfMapKey;
+			const bfchar = (isBfChar(char) ? char : ghostChar) satisfies CatsBfMapKey;
 			return [bfchar, catsBfMap[bfchar]];
 		});
 	}

@@ -8,10 +8,12 @@
 
 	import { CurrentAndPreviousRune } from '$lib/rune.svelte.js';
 
-	import * as u from '@core/unknownutil';
 	import { Try } from '@qnighy/metaflow/exception';
 	import { diffChars } from 'diff';
 	import delay from 'delay';
+	import typia from 'typia';
+
+	const assertString: typia.AssertionGuard<string> = typia.createAssertGuard<string>();
 
 	/** define states */
 	let textareaValue = new CurrentAndPreviousRune('');
@@ -20,7 +22,7 @@
 	let bfResult = $derived.by(() => {
 		return Try(() => {
 			const { current } = textareaValue;
-			u.assert(current, u.isString);
+			assertString(current);
 			return executeBrainfuck(current);
 		}).done(() => '');
 	});
@@ -29,8 +31,8 @@
 		const previousText = textareaValue.previous ?? '';
 		const currentText = textareaValue.current;
 
-		u.assert(previousText, u.isString);
-		u.assert(currentText, u.isString);
+		assertString(previousText);
+		assertString(currentText);
 
 		const diff = diffChars(previousText, currentText);
 
@@ -42,7 +44,7 @@
 					return;
 				}
 
-				u.assert(c, u.isString);
+				assertString(c);
 
 				if (c === '\n') {
 					return;
@@ -58,7 +60,7 @@
 
 	let typingString = $state<string | undefined>();
 	async function typing(input: string) {
-		if (!u.isNullish(typingString)) {
+		if (typingString != null) {
 			return;
 		}
 		typingString = input;
@@ -67,7 +69,7 @@
 		let previoutChar = '';
 		await delay(1000);
 		for (const c of input.split('')) {
-			if (u.isNullish(typingString)) {
+			if (typingString == null) {
 				return;
 			}
 			textareaValue.current += c;
