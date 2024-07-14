@@ -9,10 +9,14 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
+		"strictNullChecks": true,
 		"moduleResolution": "bundler",
 		"plugins": [
 			{
 				"name": "typescript-svelte-plugin"
+			},
+			{
+				"transform": "typia/lib/transform"
 			}
 		],
 		"types": ["vitest/importMeta"]
