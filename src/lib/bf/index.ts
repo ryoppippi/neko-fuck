@@ -5,8 +5,6 @@ export const bfChars = ['>', '<', '+', '-', '.', ',', '[', ']'] as const satisfi
 export type BFChar = ArrayValues<typeof bfChars>;
 export const isBfChar = typia.createEquals<BFChar>();
 
-const assertGuardNumber = typia.createAssertGuard<number>();
-
 function generateJumpMap(code: string[]) {
 	const jumpStack: number[] = [];
 	const jumpMap = new Map<number, number>();
