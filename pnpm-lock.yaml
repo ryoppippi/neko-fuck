@@ -12,9 +12,6 @@ importers:
         specifier: npm:@jsr/qnighy__metaflow@^0.1.0
         version: '@jsr/qnighy__metaflow@0.1.0'
     devDependencies:
-      '@core/unknownutil':
-        specifier: npm:@jsr/core__unknownutil@^3.18.0
-        version: '@jsr/core__unknownutil@3.18.0'
       '@iconify-json/grommet-icons':
         specifier: ^1.1.10
         version: 1.1.11
@@ -294,9 +291,6 @@ packages:
   '@jsdevtools/ez-spawn@3.0.4':
     resolution: {integrity: sha512-f5DRIOZf7wxogefH03RjMPMdBF7ADTWUMoOs9kaJo06EfwF+aFhMZMDZxHg/Xe12hptN9xoZjGso2fdjapBRIA==}
     engines: {node: '>=10'}
-
-  '@jsr/core__unknownutil@3.18.0':
-    resolution: {integrity: sha512-l6BJIL7HJikCY5dKrSSQjl41b5zzZbxGLfasKN2gYW031hzD2t2yrJb2Qje6sDoiWPlM1ekT/hu/+yH8X1Aa3A==, tarball: https://npm.jsr.io/~/11/@jsr/core__unknownutil/3.18.0.tgz}
 
   '@jsr/qnighy__metaflow@0.1.0':
     resolution: {integrity: sha512-N0bpQ9Mgj/P9dVa8VgMPXSIXREQLm9Qi9h+PnbuHhUO2GNQEqJQILu5938nEmiW6sN03+2ew294k1uW8zZSHLw==, tarball: https://npm.jsr.io/~/11/@jsr/qnighy__metaflow/0.1.0.tgz}
@@ -1966,8 +1960,6 @@ snapshots:
       cross-spawn: 7.0.3
       string-argv: 0.3.2
       type-detect: 4.0.8
-
-  '@jsr/core__unknownutil@3.18.0': {}
 
   '@jsr/qnighy__metaflow@0.1.0': {}
 

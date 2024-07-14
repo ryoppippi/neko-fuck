@@ -12,7 +12,6 @@
 		"prepare": "ts-patch install && typia patch"
 	},
 	"devDependencies": {
-		"@core/unknownutil": "npm:@jsr/core__unknownutil@^3.18.0",
 		"@iconify-json/grommet-icons": "^1.1.10",
 		"@ryoppippi/unplugin-typia": "npm:@jsr/ryoppippi__unplugin-typia@^0.6.3",
 		"@sveltejs/adapter-auto": "^3.2.0",
