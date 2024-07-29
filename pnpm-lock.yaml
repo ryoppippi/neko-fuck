@@ -89,7 +89,7 @@ importers:
         version: 0.3.39(svelte@5.0.0-next.199)(typescript@5.5.4)
       typia:
         specifier: ^6.5.0
-        version: 6.5.4(typescript@5.5.4)
+        version: 6.5.5(typescript@5.5.4)
       unplugin-icons:
         specifier: ^0.19.0
         version: 0.19.0
@@ -409,8 +409,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@samchon/openapi@0.4.2':
-    resolution: {integrity: sha512-lpL+HExpCH65EA8M4L0+bcC0T+0MQCaXjaHdmQ6oHQeSjTgS7ZyoA3l2B6FrkF6XA+mWosQhCmXH5t+VqmoGUQ==}
+  '@samchon/openapi@0.4.3':
+    resolution: {integrity: sha512-FyXEYRD/y9YND1AkpshAzdGpp/zKAIHI7RNrH4rnjaJP2hi2Yqz8OXquTW3PUOnqlos3jSwR3b2nKLohyTjp6w==}
 
   '@sveltejs/adapter-auto@3.2.2':
     resolution: {integrity: sha512-Mso5xPCA8zgcKrv+QioVlqMZkyUQ5MjDJiEPuG/Z7cV/5tmwV7LmcVWk5tZ+H0NCOV1x12AsoSpt/CwFwuVXMA==}
@@ -1654,8 +1654,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typia@6.5.4:
-    resolution: {integrity: sha512-4+oiWrLree/AgjiqVaQEOlaVDIKQkbsKmC9Tyhrsk4n7znjP7EHjRX9TIcN0q1ACfGTcwlf+ZBf5qQW/MEPRuw==}
+  typia@6.5.5:
+    resolution: {integrity: sha512-sR8ByqQArV3gX7lghZ6Cjvoi3tm2+aC9gg6Dk7ZlmEWlzyUAGTr2GfqvU9XOfGjW3Gr7cybFmbpKKmqHV3+ETw==}
     hasBin: true
     peerDependencies:
       typescript: '>=4.8.0 <5.6.0'
@@ -1976,7 +1976,7 @@ snapshots:
       pkg-types: 1.1.3
       type-fest: 4.23.0
       typescript: 5.5.4
-      typia: 6.5.4(typescript@5.5.4)
+      typia: 6.5.5(typescript@5.5.4)
       unplugin: 1.11.0
     transitivePeerDependencies:
       - rollup
@@ -2054,7 +2054,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.19.1':
     optional: true
 
-  '@samchon/openapi@0.4.2': {}
+  '@samchon/openapi@0.4.3': {}
 
   '@sveltejs/adapter-auto@3.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.199)(vite@5.3.5))(svelte@5.0.0-next.199)(vite@5.3.5))':
     dependencies:
@@ -3249,9 +3249,9 @@ snapshots:
 
   typescript@5.5.4: {}
 
-  typia@6.5.4(typescript@5.5.4):
+  typia@6.5.5(typescript@5.5.4):
     dependencies:
-      '@samchon/openapi': 0.4.2
+      '@samchon/openapi': 0.4.3
       commander: 10.0.1
       comment-json: 4.2.4
       inquirer: 8.2.6
