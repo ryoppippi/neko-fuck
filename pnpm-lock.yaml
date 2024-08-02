@@ -86,7 +86,7 @@ importers:
         version: 5.5.4
       typescript-svelte-plugin:
         specifier: ^0.3.38
-        version: 0.3.39(svelte@5.0.0-next.202)(typescript@5.5.4)
+        version: 0.3.40(svelte@5.0.0-next.202)(typescript@5.5.4)
       typia:
         specifier: ^6.5.0
         version: 6.6.1(typescript@5.5.4)
@@ -281,9 +281,6 @@ packages:
   '@jridgewell/set-array@1.2.1':
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.4.15':
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -1571,8 +1568,8 @@ packages:
       typescript:
         optional: true
 
-  svelte2tsx@0.7.10:
-    resolution: {integrity: sha512-POOXaTncPGjwXMj6NVSRvdNj8KFqqLabFtXsQal3WyPy4X5raGsiDST2+ELhceKwfHk79/hR3qGUeU7KxYo4vQ==}
+  svelte2tsx@0.7.15:
+    resolution: {integrity: sha512-91RbLJI448FR1UEZqXSS3ucVMERuWo8ACOhxfkBPK1CL2ocGMOC5bwc8tzFvb/Ji8NqZ7wmSGfvRebcUsiauKA==}
     peerDependencies:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
@@ -1648,8 +1645,8 @@ packages:
     resolution: {integrity: sha512-ZiBujro2ohr5+Z/hZWHESLz3g08BBdrdLMieYFULJO+tWc437sn8kQsWLJoZErY8alNhxre9K4p3GURAG11n+w==}
     engines: {node: '>=16'}
 
-  typescript-svelte-plugin@0.3.39:
-    resolution: {integrity: sha512-7c6AAhoIIIGYmERtgeBfL40/nzG4ciPqbYXweRg+AvS8tG8q7kENLmaHK6BCnwmxATxxCTio02JTQZyZMP1XVg==}
+  typescript-svelte-plugin@0.3.40:
+    resolution: {integrity: sha512-/5k/DktoxpiUp4QDRVODCYenb91sD+z4Qt4nHk2ycCAk6dUaBvlqfOdd8TRXWb+xUBWov12HsgfV68tLeI2V7g==}
 
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
@@ -1951,8 +1948,6 @@ snapshots:
   '@jridgewell/resolve-uri@3.1.2': {}
 
   '@jridgewell/set-array@1.2.1': {}
-
-  '@jridgewell/sourcemap-codec@1.4.15': {}
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
@@ -3135,7 +3130,7 @@ snapshots:
       postcss-load-config: 4.0.2(postcss@8.4.40)
       typescript: 5.5.4
 
-  svelte2tsx@0.7.10(svelte@5.0.0-next.202)(typescript@5.5.4):
+  svelte2tsx@0.7.15(svelte@5.0.0-next.202)(typescript@5.5.4):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
@@ -3237,10 +3232,10 @@ snapshots:
 
   type-fest@4.23.0: {}
 
-  typescript-svelte-plugin@0.3.39(svelte@5.0.0-next.202)(typescript@5.5.4):
+  typescript-svelte-plugin@0.3.40(svelte@5.0.0-next.202)(typescript@5.5.4):
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.4.15
-      svelte2tsx: 0.7.10(svelte@5.0.0-next.202)(typescript@5.5.4)
+      '@jridgewell/sourcemap-codec': 1.5.0
+      svelte2tsx: 0.7.15(svelte@5.0.0-next.202)(typescript@5.5.4)
     transitivePeerDependencies:
       - svelte
       - typescript
