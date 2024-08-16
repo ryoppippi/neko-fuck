@@ -20,7 +20,7 @@ importers:
         version: '@jsr/ryoppippi__unplugin-typia@0.6.4(rollup@4.19.1)'
       '@sveltejs/adapter-auto':
         specifier: ^3.2.0
-        version: 3.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.205)(vite@5.3.5))(svelte@5.0.0-next.205)(vite@5.3.5))
+        version: 3.2.4(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.205)(vite@5.3.5))(svelte@5.0.0-next.205)(vite@5.3.5))
       '@sveltejs/adapter-static':
         specifier: ^3.0.1
         version: 3.0.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.205)(vite@5.3.5))(svelte@5.0.0-next.205)(vite@5.3.5))
@@ -409,8 +409,8 @@ packages:
   '@samchon/openapi@0.4.3':
     resolution: {integrity: sha512-FyXEYRD/y9YND1AkpshAzdGpp/zKAIHI7RNrH4rnjaJP2hi2Yqz8OXquTW3PUOnqlos3jSwR3b2nKLohyTjp6w==}
 
-  '@sveltejs/adapter-auto@3.2.2':
-    resolution: {integrity: sha512-Mso5xPCA8zgcKrv+QioVlqMZkyUQ5MjDJiEPuG/Z7cV/5tmwV7LmcVWk5tZ+H0NCOV1x12AsoSpt/CwFwuVXMA==}
+  '@sveltejs/adapter-auto@3.2.4':
+    resolution: {integrity: sha512-a64AKYbfTUrVwU0xslzv1Jf3M8bj0IwhptaXmhgIkjXspBXhD0od9JiItQHchijpLMGdEDcYBlvqySkEawv6mQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -2056,7 +2056,7 @@ snapshots:
 
   '@samchon/openapi@0.4.3': {}
 
-  '@sveltejs/adapter-auto@3.2.2(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.205)(vite@5.3.5))(svelte@5.0.0-next.205)(vite@5.3.5))':
+  '@sveltejs/adapter-auto@3.2.4(@sveltejs/kit@2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.205)(vite@5.3.5))(svelte@5.0.0-next.205)(vite@5.3.5))':
     dependencies:
       '@sveltejs/kit': 2.5.18(@sveltejs/vite-plugin-svelte@3.1.1(svelte@5.0.0-next.205)(vite@5.3.5))(svelte@5.0.0-next.205)(vite@5.3.5)
       import-meta-resolve: 4.1.0
