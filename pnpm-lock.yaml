@@ -16,8 +16,8 @@ importers:
         specifier: ^1.1.10
         version: 1.1.12
       '@ryoppippi/unplugin-typia':
-        specifier: npm:@jsr/ryoppippi__unplugin-typia@^0.6.4
-        version: '@jsr/ryoppippi__unplugin-typia@0.6.4(rollup@4.21.0)'
+        specifier: npm:@jsr/ryoppippi__unplugin-typia@^1.0.0
+        version: '@jsr/ryoppippi__unplugin-typia@1.0.3(rollup@4.21.0)'
       '@sveltejs/adapter-auto':
         specifier: ^3.2.0
         version: 3.2.4(@sveltejs/kit@2.5.25(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.240)(vite@5.4.2))(svelte@5.0.0-next.240)(vite@5.4.2))
@@ -295,8 +295,8 @@ packages:
   '@jsr/qnighy__metaflow@0.1.0':
     resolution: {integrity: sha512-N0bpQ9Mgj/P9dVa8VgMPXSIXREQLm9Qi9h+PnbuHhUO2GNQEqJQILu5938nEmiW6sN03+2ew294k1uW8zZSHLw==, tarball: https://npm.jsr.io/~/11/@jsr/qnighy__metaflow/0.1.0.tgz}
 
-  '@jsr/ryoppippi__unplugin-typia@0.6.4':
-    resolution: {integrity: sha512-Ccy+RZYnnUA/QUKBkBBMHzElcoEU0lVpdoLZycOAN8WI78way9mUNuS04fS0lB8M+/UVBZT1quB2O1najYq9Ng==, tarball: https://npm.jsr.io/~/11/@jsr/ryoppippi__unplugin-typia/0.6.4.tgz}
+  '@jsr/ryoppippi__unplugin-typia@1.0.3':
+    resolution: {integrity: sha512-u44niPPxs4LJLXvPzQunq8R9Yn3Gw7dBuwjv43JzFkhjHgJ2DPSZYXFSFkkUfPWVUNLOti2hxJVw6/sOWLqWmg==, tarball: https://npm.jsr.io/~/11/@jsr/ryoppippi__unplugin-typia/1.0.3.tgz}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -477,11 +477,6 @@ packages:
     resolution: {integrity: sha512-xsc9Xv0xlVfwp2o7sQ+GCQ1PgbkdcpWdTzrwXxO3xDMTAywVS3oXVOcOHuRjAPkS4P9b+yc/qNF15460v+jp4Q==}
     peerDependencies:
       acorn: '>=8.9.0'
-
-  acorn@8.11.3:
-    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
 
   acorn@8.12.1:
     resolution: {integrity: sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==}
@@ -1035,9 +1030,6 @@ packages:
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
-
-  magic-string@0.30.10:
-    resolution: {integrity: sha512-iIRwTIf0QKV3UAnYK4PU8uiEc4SRh5jX0mwpIwETPpHdhVM4f53RSwS/vXvN1JhGX+Cs7B8qIq3d6AH49O5fAQ==}
 
   magic-string@0.30.11:
     resolution: {integrity: sha512-+Wri9p0QHMy+545hKww7YAu5NyzF8iomPL/RQazugQ9+Ez4Ic3mERMd8ZTX5rfK944j+560ZJi8iAwgak1Ac7A==}
@@ -1674,10 +1666,6 @@ packages:
       vue-template-es2015-compiler:
         optional: true
 
-  unplugin@1.11.0:
-    resolution: {integrity: sha512-3r7VWZ/webh0SGgJScpWl2/MRCZK5d3ZYFcNaeci/GQ7Teop7zf0Nl2pUuz7G21BwPd9pcUPOC5KmJ2L3WgC5g==}
-    engines: {node: '>=14.0.0'}
-
   unplugin@1.12.2:
     resolution: {integrity: sha512-bEqQxeC7rxtxPZ3M5V4Djcc4lQqKPgGe3mAWZvxcSmX5jhGxll19NliaRzQSQPrk4xJZSGniK3puLWpRuZN7VQ==}
     engines: {node: '>=14.0.0'}
@@ -1766,9 +1754,6 @@ packages:
   webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
-
-  webpack-virtual-modules@0.6.1:
-    resolution: {integrity: sha512-poXpCylU7ExuvZK8z+On3kX+S8o/2dQ/SVYueKA0D4WEMXROXgY8Ez50/bQEUmvoSMMrWcrJqCHuhAbsiwg7Dg==}
 
   webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
@@ -1960,21 +1945,30 @@ snapshots:
 
   '@jsr/qnighy__metaflow@0.1.0': {}
 
-  '@jsr/ryoppippi__unplugin-typia@0.6.4(rollup@4.21.0)':
+  '@jsr/ryoppippi__unplugin-typia@1.0.3(rollup@4.21.0)':
     dependencies:
       '@rollup/pluginutils': 5.1.0(rollup@4.21.0)
       consola: 3.2.3
       defu: 6.1.4
       find-cache-dir: 5.0.0
-      magic-string: 0.30.10
+      magic-string: 0.30.11
       pathe: 1.1.2
       pkg-types: 1.1.3
       type-fest: 4.25.0
       typescript: 5.5.4
       typia: 6.9.0(typescript@5.5.4)
-      unplugin: 1.11.0
+      unplugin: 1.12.2
+      vite: 5.4.2
     transitivePeerDependencies:
+      - '@types/node'
+      - less
+      - lightningcss
       - rollup
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - terser
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -2145,8 +2139,6 @@ snapshots:
   acorn-typescript@1.4.13(acorn@8.12.1):
     dependencies:
       acorn: 8.12.1
-
-  acorn@8.11.3: {}
 
   acorn@8.12.1: {}
 
@@ -2677,10 +2669,6 @@ snapshots:
       tslib: 2.7.0
 
   lru-cache@10.4.3: {}
-
-  magic-string@0.30.10:
-    dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.0
 
   magic-string@0.30.11:
     dependencies:
@@ -3252,13 +3240,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  unplugin@1.11.0:
-    dependencies:
-      acorn: 8.11.3
-      chokidar: 3.6.0
-      webpack-sources: 3.2.3
-      webpack-virtual-modules: 0.6.1
-
   unplugin@1.12.2:
     dependencies:
       acorn: 8.12.1
@@ -3340,8 +3321,6 @@ snapshots:
       defaults: 1.0.4
 
   webpack-sources@3.2.3: {}
-
-  webpack-virtual-modules@0.6.1: {}
 
   webpack-virtual-modules@0.6.2: {}
 
