@@ -14,7 +14,7 @@ importers:
     devDependencies:
       '@iconify-json/grommet-icons':
         specifier: ^1.1.10
-        version: 1.1.12
+        version: 1.2.0
       '@ryoppippi/unplugin-typia':
         specifier: npm:@jsr/ryoppippi__unplugin-typia@^1.0.0
         version: '@jsr/ryoppippi__unplugin-typia@1.0.3(rollup@4.21.0)'
@@ -257,8 +257,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@iconify-json/grommet-icons@1.1.12':
-    resolution: {integrity: sha512-uITpfKABP2j/DE78zaMWSZCNGG7TxBzcGMD3zDE3QbHkne+33eIt0OZ7xJlHz6sleEb02x5+m4RK7bS3bVQi0g==}
+  '@iconify-json/grommet-icons@1.2.0':
+    resolution: {integrity: sha512-YnhfMsJeXsfsSkMQP206MpVPY/O0jXbyhC9+P70W6SkVvpODqw72GK7TV1pnKUuPvNRZzRik2x+9KWQxgmMhGQ==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -1895,7 +1895,7 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
-  '@iconify-json/grommet-icons@1.1.12':
+  '@iconify-json/grommet-icons@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 
