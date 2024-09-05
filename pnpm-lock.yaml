@@ -86,7 +86,7 @@ importers:
         version: 5.5.4
       typescript-svelte-plugin:
         specifier: ^0.3.38
-        version: 0.3.40(svelte@5.0.0-next.242)(typescript@5.5.4)
+        version: 0.3.41(svelte@5.0.0-next.242)(typescript@5.5.4)
       typia:
         specifier: ^6.5.0
         version: 6.9.0(typescript@5.5.4)
@@ -1555,8 +1555,8 @@ packages:
       typescript:
         optional: true
 
-  svelte2tsx@0.7.15:
-    resolution: {integrity: sha512-91RbLJI448FR1UEZqXSS3ucVMERuWo8ACOhxfkBPK1CL2ocGMOC5bwc8tzFvb/Ji8NqZ7wmSGfvRebcUsiauKA==}
+  svelte2tsx@0.7.18:
+    resolution: {integrity: sha512-PCOhH7uQaV472ZvNAcnkvShjFRMMkKUc/eNJImQMH9T4CyHeQpdatedFrEjaMCsweFb/oo3a6bv4qtdfaCPw8g==}
     peerDependencies:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
@@ -1632,8 +1632,8 @@ packages:
     resolution: {integrity: sha512-OduNjVJsFbifKb57UqZ2EMP1i4u64Xwow3NYXUtBbD4vIwJdQd4+xl8YDou1dlm4DVrtwT/7Ky8z8WyCULVfxw==}
     engines: {node: '>=16'}
 
-  typescript-svelte-plugin@0.3.40:
-    resolution: {integrity: sha512-/5k/DktoxpiUp4QDRVODCYenb91sD+z4Qt4nHk2ycCAk6dUaBvlqfOdd8TRXWb+xUBWov12HsgfV68tLeI2V7g==}
+  typescript-svelte-plugin@0.3.41:
+    resolution: {integrity: sha512-cd6sW0ztsd0tf0+LvHUMGrv2PGFUAjS1AbjXRbhIiTkrk6d1aiqmI1GlMSowyrP8LSVxjclMmB8ylhAKoMJydA==}
 
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
@@ -3110,7 +3110,7 @@ snapshots:
       postcss-load-config: 4.0.2(postcss@8.4.44)
       typescript: 5.5.4
 
-  svelte2tsx@0.7.15(svelte@5.0.0-next.242)(typescript@5.5.4):
+  svelte2tsx@0.7.18(svelte@5.0.0-next.242)(typescript@5.5.4):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
@@ -3212,10 +3212,10 @@ snapshots:
 
   type-fest@4.26.0: {}
 
-  typescript-svelte-plugin@0.3.40(svelte@5.0.0-next.242)(typescript@5.5.4):
+  typescript-svelte-plugin@0.3.41(svelte@5.0.0-next.242)(typescript@5.5.4):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-      svelte2tsx: 0.7.15(svelte@5.0.0-next.242)(typescript@5.5.4)
+      svelte2tsx: 0.7.18(svelte@5.0.0-next.242)(typescript@5.5.4)
     transitivePeerDependencies:
       - svelte
       - typescript
