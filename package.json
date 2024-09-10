@@ -23,7 +23,7 @@
 		"await-to-js": "^3.0.0",
 		"daisyui": "^4.10.5",
 		"delay": "^6.0.0",
-		"diff": "^6.0.0",
+		"diff": "^7.0.0",
 		"postcss": "^8.4.38",
 		"prettier": "^3.2.5",
 		"prettier-plugin-svelte": "^3.2.3",
