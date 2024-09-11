@@ -80,7 +80,7 @@ importers:
         version: 2.7.0
       type-fest:
         specifier: ^4.18.1
-        version: 4.26.0
+        version: 4.26.1
       typescript:
         specifier: ^5.5.3
         version: 5.5.4
@@ -1492,8 +1492,8 @@ packages:
     resolution: {integrity: sha512-t0rzBq87m3fVcduHDUFhKmyyX+9eo6WQjZvf51Ea/M0Q7+T374Jp1aUiyUl0GKxp8M/OETVHSDvmkyPgvX+X2w==}
     engines: {node: '>=10'}
 
-  type-fest@4.26.0:
-    resolution: {integrity: sha512-OduNjVJsFbifKb57UqZ2EMP1i4u64Xwow3NYXUtBbD4vIwJdQd4+xl8YDou1dlm4DVrtwT/7Ky8z8WyCULVfxw==}
+  type-fest@4.26.1:
+    resolution: {integrity: sha512-yOGpmOAL7CkKe/91I5O3gPICmJNLJ1G4zFYVAsRHg7M64biSnPtRj0WNQt++bRkjYOqjWXrhnUw1utzmVErAdg==}
     engines: {node: '>=16'}
 
   typescript-svelte-plugin@0.3.41:
@@ -1812,7 +1812,7 @@ snapshots:
       magic-string: 0.30.11
       pathe: 1.1.2
       pkg-types: 1.1.3
-      type-fest: 4.26.0
+      type-fest: 4.26.1
       typescript: 5.5.4
       typia: 6.9.0(typescript@5.5.4)
       unplugin: 1.12.2
@@ -2942,7 +2942,7 @@ snapshots:
 
   type-fest@0.21.3: {}
 
-  type-fest@4.26.0: {}
+  type-fest@4.26.1: {}
 
   typescript-svelte-plugin@0.3.41(svelte@5.0.0-next.244)(typescript@5.5.4):
     dependencies:
