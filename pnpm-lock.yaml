@@ -65,10 +65,10 @@ importers:
         version: 5.0.0-next.244
       svelte-check:
         specifier: ^4.0.0
-        version: 4.0.1(svelte@5.0.0-next.244)(typescript@5.5.4)
+        version: 4.0.1(svelte@5.0.0-next.244)(typescript@5.6.2)
       svelte-html-event:
         specifier: ^0.0.6
-        version: 0.0.6(svelte@5.0.0-next.244)(typescript@5.5.4)
+        version: 0.0.6(svelte@5.0.0-next.244)(typescript@5.6.2)
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.10
@@ -83,13 +83,13 @@ importers:
         version: 4.26.1
       typescript:
         specifier: ^5.5.3
-        version: 5.5.4
+        version: 5.6.2
       typescript-svelte-plugin:
         specifier: ^0.3.38
-        version: 0.3.41(svelte@5.0.0-next.244)(typescript@5.5.4)
+        version: 0.3.41(svelte@5.0.0-next.244)(typescript@5.6.2)
       typia:
         specifier: ^6.5.0
-        version: 6.9.0(typescript@5.5.4)
+        version: 6.9.0(typescript@5.6.2)
       unplugin-icons:
         specifier: ^0.19.0
         version: 0.19.3(webpack-sources@3.2.3)
@@ -1504,6 +1504,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   typia@6.9.0:
     resolution: {integrity: sha512-Vgo3CmE9XZhb/zsrW6Q4IQk7JeJk+ZVGxu/T4QZdI/PEokOpn00mGFMk9hhXNA27jrYC0NCgalO+YcZYsR5nGw==}
     hasBin: true
@@ -2821,7 +2826,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@4.0.1(svelte@5.0.0-next.244)(typescript@5.5.4):
+  svelte-check@4.0.1(svelte@5.0.0-next.244)(typescript@5.6.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 3.6.0
@@ -2829,7 +2834,7 @@ snapshots:
       picocolors: 1.1.0
       sade: 1.8.1
       svelte: 5.0.0-next.244
-      typescript: 5.5.4
+      typescript: 5.6.2
     transitivePeerDependencies:
       - picomatch
 
@@ -2837,17 +2842,17 @@ snapshots:
     dependencies:
       svelte: 5.0.0-next.244
 
-  svelte-html-event@0.0.6(svelte@5.0.0-next.244)(typescript@5.5.4):
+  svelte-html-event@0.0.6(svelte@5.0.0-next.244)(typescript@5.6.2):
     dependencies:
       svelte: 5.0.0-next.244
-      typescript: 5.5.4
+      typescript: 5.6.2
 
-  svelte2tsx@0.7.18(svelte@5.0.0-next.244)(typescript@5.5.4):
+  svelte2tsx@0.7.18(svelte@5.0.0-next.244)(typescript@5.6.2):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 5.0.0-next.244
-      typescript: 5.5.4
+      typescript: 5.6.2
 
   svelte@5.0.0-next.244:
     dependencies:
@@ -2944,15 +2949,17 @@ snapshots:
 
   type-fest@4.26.1: {}
 
-  typescript-svelte-plugin@0.3.41(svelte@5.0.0-next.244)(typescript@5.5.4):
+  typescript-svelte-plugin@0.3.41(svelte@5.0.0-next.244)(typescript@5.6.2):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-      svelte2tsx: 0.7.18(svelte@5.0.0-next.244)(typescript@5.5.4)
+      svelte2tsx: 0.7.18(svelte@5.0.0-next.244)(typescript@5.6.2)
     transitivePeerDependencies:
       - svelte
       - typescript
 
   typescript@5.5.4: {}
+
+  typescript@5.6.2: {}
 
   typia@6.9.0(typescript@5.5.4):
     dependencies:
@@ -2962,6 +2969,15 @@ snapshots:
       inquirer: 8.2.6
       randexp: 0.5.3
       typescript: 5.5.4
+
+  typia@6.9.0(typescript@5.6.2):
+    dependencies:
+      '@samchon/openapi': 0.4.9
+      commander: 10.0.1
+      comment-json: 4.2.5
+      inquirer: 8.2.6
+      randexp: 0.5.3
+      typescript: 5.6.2
 
   ufo@1.5.4: {}
 
