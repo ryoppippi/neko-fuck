@@ -86,7 +86,7 @@ importers:
         version: 5.7.2
       typescript-svelte-plugin:
         specifier: ^0.3.38
-        version: 0.3.43(svelte@5.0.0-next.246)(typescript@5.7.2)
+        version: 0.3.44(svelte@5.0.0-next.246)(typescript@5.7.2)
       typia:
         specifier: ^6.5.0
         version: 6.12.2(@samchon/openapi@1.2.2)(typescript@5.7.2)
@@ -1571,8 +1571,8 @@ packages:
       svelte: ^4.2.2 || ^5.0.0-next.0
       typescript: ^5.0.0
 
-  svelte2tsx@0.7.24:
-    resolution: {integrity: sha512-KbKD+5aqTYdRPfAroA72xc3kEz3Dj0Vq7X3IjHLWbwfco7pwioEx4x/V9lOpKmkHlYh9YNPkqXWlbrH7Cc580A==}
+  svelte2tsx@0.7.30:
+    resolution: {integrity: sha512-sHXK/vw/sVJmFuPSq6zeKrtuZKvo0jJyEi8ybN0dfrqSYVvHu8zFbO0zQKAL8y/fYackYojH41EJGe6v8rd5fw==}
     peerDependencies:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
@@ -1647,8 +1647,8 @@ packages:
     resolution: {integrity: sha512-G6zXWS1dLj6eagy6sVhOMQiLtJdxQBHIA9Z6HFUNLOlr6MFOgzV8wvmidtPONfPtEUv0uZsy77XJNzTAfwPDaA==}
     engines: {node: '>=16'}
 
-  typescript-svelte-plugin@0.3.43:
-    resolution: {integrity: sha512-n7WBWB+y91YOniN6RloG7jujsidwDn4F8ttDoC3r8gJT+t2IZUE6+ktwXnlwhCa8IuRB0nr7sT+wV4RL7reJTg==}
+  typescript-svelte-plugin@0.3.44:
+    resolution: {integrity: sha512-EO/wj/ir9rwz+xJ3VI47K+vwvNC+iAZBgQiyv3MmhJcUSt11YxvbotL78jxXdytui/DpUPSEOhuDnLw+LTNaeA==}
 
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
@@ -3139,7 +3139,7 @@ snapshots:
       svelte: 5.0.0-next.246
       typescript: 5.7.2
 
-  svelte2tsx@0.7.24(svelte@5.0.0-next.246)(typescript@5.7.2):
+  svelte2tsx@0.7.30(svelte@5.0.0-next.246)(typescript@5.7.2):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
@@ -3241,10 +3241,10 @@ snapshots:
 
   type-fest@4.30.0: {}
 
-  typescript-svelte-plugin@0.3.43(svelte@5.0.0-next.246)(typescript@5.7.2):
+  typescript-svelte-plugin@0.3.44(svelte@5.0.0-next.246)(typescript@5.7.2):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
-      svelte2tsx: 0.7.24(svelte@5.0.0-next.246)(typescript@5.7.2)
+      svelte2tsx: 0.7.30(svelte@5.0.0-next.246)(typescript@5.7.2)
     transitivePeerDependencies:
       - svelte
       - typescript
