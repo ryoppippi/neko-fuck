@@ -1,4 +1,4 @@
-<script context="module" lang="ts">
+<script module lang="ts">
 	import { ghostChar, isCatsBfMapKey, type CatsBfMapKey } from '$lib/types';
 	import { isBfChar, type BFChar } from '$lib/bf';
 
