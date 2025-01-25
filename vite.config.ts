@@ -5,7 +5,9 @@ import UnpluginTypia from '@ryoppippi/unplugin-typia/vite';
 
 export default defineConfig({
 	plugins: [
-		UnpluginTypia(),
+		UnpluginTypia({
+			cache: false
+		}),
 		sveltekit(),
 		Icons({
 			compiler: 'svelte',
