@@ -89,7 +89,7 @@ importers:
         version: 0.3.45(svelte@5.19.7)(typescript@5.7.3)
       typia:
         specifier: ^7.6.0
-        version: 7.6.0(@samchon/openapi@2.4.1)(typescript@5.7.3)
+        version: 7.6.1(@samchon/openapi@2.4.1)(typescript@5.7.3)
       unplugin-icons:
         specifier: ^22.0.0
         version: 22.0.0(svelte@5.19.7)
@@ -1103,8 +1103,8 @@ packages:
   package-json-from-dist@1.0.1:
     resolution: {integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==}
 
-  package-manager-detector@0.2.6:
-    resolution: {integrity: sha512-9vPH3qooBlYRJdmdYP00nvjZOulm40r5dhtal8st18ctf+6S1k7pi5yIHLvI4w5D70x0Y+xdVD9qITH0QO/A8A==}
+  package-manager-detector@0.2.9:
+    resolution: {integrity: sha512-+vYvA/Y31l8Zk8dwxHhL3JfTuHPm6tlxM2A3GeQyl7ovYnSp1+mzAxClxaOr0qO1TtPxbQxetI7v5XqKLJZk7Q==}
 
   pascal-case@3.1.2:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
@@ -1507,11 +1507,11 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typia@7.6.0:
-    resolution: {integrity: sha512-iuxkRcZltbxEA87CvW6vIvNaQerEcLZbRmJugMraZFAMTwVf3AKvQEh4pSq2n1VMfomINnWFhy0nxEWvpEzHbQ==}
+  typia@7.6.1:
+    resolution: {integrity: sha512-9NnX18AV0RpSWMydtFxMznK/RwfqSEh1Oq+HxDZzGFffVSuJI6YTkFaz4xcYsMm8z/UFgyL0B7ULiv/LQKB43g==}
     hasBin: true
     peerDependencies:
-      '@samchon/openapi': '>=2.4.0 <3.0.0'
+      '@samchon/openapi': '>=2.4.2 <3.0.0'
       typescript: '>=4.8.0 <5.8.0'
 
   ufo@1.5.4:
@@ -1694,12 +1694,12 @@ snapshots:
 
   '@antfu/install-pkg@0.4.1':
     dependencies:
-      package-manager-detector: 0.2.6
+      package-manager-detector: 0.2.9
       tinyexec: 0.3.2
 
   '@antfu/install-pkg@0.5.0':
     dependencies:
-      package-manager-detector: 0.2.6
+      package-manager-detector: 0.2.9
       tinyexec: 0.3.2
 
   '@antfu/utils@0.7.10': {}
@@ -1920,7 +1920,7 @@ snapshots:
       pkg-types: 1.2.1
       type-fest: 4.33.0
       typescript: 5.6.3
-      typia: 7.6.0(@samchon/openapi@2.4.1)(typescript@5.6.3)
+      typia: 7.6.1(@samchon/openapi@2.4.1)(typescript@5.6.3)
       unplugin: 1.16.1
       vite: 6.0.11(jiti@1.21.7)(yaml@2.6.1)
     transitivePeerDependencies:
@@ -2584,7 +2584,7 @@ snapshots:
 
   package-json-from-dist@1.0.1: {}
 
-  package-manager-detector@0.2.6: {}
+  package-manager-detector@0.2.9: {}
 
   pascal-case@3.1.2:
     dependencies:
@@ -2956,23 +2956,23 @@ snapshots:
 
   typescript@5.7.3: {}
 
-  typia@7.6.0(@samchon/openapi@2.4.1)(typescript@5.6.3):
+  typia@7.6.1(@samchon/openapi@2.4.1)(typescript@5.6.3):
     dependencies:
       '@samchon/openapi': 2.4.1
       commander: 10.0.1
       comment-json: 4.2.5
       inquirer: 8.2.6
-      package-manager-detector: 0.2.6
+      package-manager-detector: 0.2.9
       randexp: 0.5.3
       typescript: 5.6.3
 
-  typia@7.6.0(@samchon/openapi@2.4.1)(typescript@5.7.3):
+  typia@7.6.1(@samchon/openapi@2.4.1)(typescript@5.7.3):
     dependencies:
       '@samchon/openapi': 2.4.1
       commander: 10.0.1
       comment-json: 4.2.5
       inquirer: 8.2.6
-      package-manager-detector: 0.2.6
+      package-manager-detector: 0.2.9
       randexp: 0.5.3
       typescript: 5.7.3
 
