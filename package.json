@@ -13,7 +13,7 @@
 	},
 	"devDependencies": {
 		"@iconify-json/grommet-icons": "^1.2.1",
-		"@ryoppippi/unplugin-typia": "^1.2.0",
+		"@ryoppippi/unplugin-typia": "^2.0.0",
 		"@sveltejs/adapter-auto": "^4.0.0",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.16.1",
