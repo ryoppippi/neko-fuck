@@ -17,7 +17,7 @@ importers:
         version: 1.2.1
       '@ryoppippi/unplugin-typia':
         specifier: ^1.2.0
-        version: 1.2.0(@samchon/openapi@2.4.1)(jiti@1.21.7)(rollup@4.34.8)(yaml@2.6.1)
+        version: 1.2.0(jiti@1.21.7)(rollup@4.34.8)(yaml@2.6.1)
       '@sveltejs/adapter-auto':
         specifier: ^4.0.0
         version: 4.0.0(@sveltejs/kit@2.18.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.22.5)(vite@6.2.0(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.22.5)(vite@6.2.0(jiti@1.21.7)(yaml@2.6.1)))
@@ -88,8 +88,8 @@ importers:
         specifier: ^0.3.45
         version: 0.3.46(svelte@5.22.5)(typescript@5.8.2)
       typia:
-        specifier: ^7.6.0
-        version: 7.6.4(@samchon/openapi@2.4.1)(typescript@5.8.2)
+        specifier: ^8.0.0
+        version: 8.0.0(typescript@5.8.2)
       unplugin-icons:
         specifier: ^22.0.0
         version: 22.1.0(svelte@5.22.5)
@@ -425,9 +425,6 @@ packages:
 
   '@ryoppippi/unplugin-typia@1.2.0':
     resolution: {integrity: sha512-TlrqL2WQie2HvSqJpmKPXrFsNPbMwU5Jw2Asx+E3E3Fuyya5mN1lqaeILwSZLmkCOMTQLazIrTWNOGs0V6XL6A==}
-
-  '@samchon/openapi@2.4.1':
-    resolution: {integrity: sha512-xynHEJJGAzmHDhc46NzROOs1qCVu0i02tqe5JxMRsiiq1fjeFnOltZomrHfKYoX6HPsfPtEOuWmbZAdprc5A9g==}
 
   '@sveltejs/acorn-typescript@1.0.5':
     resolution: {integrity: sha512-IwQk4yfwLdibDlrXVE04jTZYlLnwsTT2PIOQQGNLWfjavGifnk1JD1LcZjZaBTRcxZu2FfPfNLOE04DSu9lqtQ==}
@@ -1506,6 +1503,13 @@ packages:
       '@samchon/openapi': '>=2.4.2 <3.0.0'
       typescript: '>=4.8.0 <5.8.0'
 
+  typia@8.0.0:
+    resolution: {integrity: sha512-ulYqugl0rXStArmFBxTxwC796gW4KkRas7wy7hOYwtRulxfBOJlurZMZ9MA8lN9LrgOpX/bnW0bW3w75ws6wIA==}
+    hasBin: true
+    peerDependencies:
+      '@samchon/openapi': '>=3.0.0 <4.0.0'
+      typescript: '>=4.8.0 <5.9.0'
+
   ufo@1.5.4:
     resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
@@ -1895,7 +1899,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.8':
     optional: true
 
-  '@ryoppippi/unplugin-typia@1.2.0(@samchon/openapi@2.4.1)(jiti@1.21.7)(rollup@4.34.8)(yaml@2.6.1)':
+  '@ryoppippi/unplugin-typia@1.2.0(jiti@1.21.7)(rollup@4.34.8)(yaml@2.6.1)':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.34.8)
       consola: 3.2.3
@@ -1907,7 +1911,7 @@ snapshots:
       pkg-types: 1.2.1
       type-fest: 4.37.0
       typescript: 5.6.3
-      typia: 7.6.4(@samchon/openapi@2.4.1)(typescript@5.6.3)
+      typia: 7.6.4(typescript@5.6.3)
       unplugin: 1.16.1
       vite: 6.2.0(jiti@1.21.7)(yaml@2.6.1)
     transitivePeerDependencies:
@@ -1924,8 +1928,6 @@ snapshots:
       - terser
       - tsx
       - yaml
-
-  '@samchon/openapi@2.4.1': {}
 
   '@sveltejs/acorn-typescript@1.0.5(acorn@8.14.1)':
     dependencies:
@@ -2940,9 +2942,8 @@ snapshots:
 
   typescript@5.8.2: {}
 
-  typia@7.6.4(@samchon/openapi@2.4.1)(typescript@5.6.3):
+  typia@7.6.4(typescript@5.6.3):
     dependencies:
-      '@samchon/openapi': 2.4.1
       commander: 10.0.1
       comment-json: 4.2.5
       inquirer: 8.2.6
@@ -2950,9 +2951,8 @@ snapshots:
       randexp: 0.5.3
       typescript: 5.6.3
 
-  typia@7.6.4(@samchon/openapi@2.4.1)(typescript@5.8.2):
+  typia@8.0.0(typescript@5.8.2):
     dependencies:
-      '@samchon/openapi': 2.4.1
       commander: 10.0.1
       comment-json: 4.2.5
       inquirer: 8.2.6
