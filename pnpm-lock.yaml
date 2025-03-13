@@ -16,8 +16,8 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1
       '@ryoppippi/unplugin-typia':
-        specifier: ^1.2.0
-        version: 1.2.0(@samchon/openapi@2.4.1)(jiti@1.21.7)(rollup@4.35.0)(yaml@2.6.1)
+        specifier: ^2.0.0
+        version: 2.0.3(rollup@4.35.0)(svelte@5.22.6)(typescript@5.8.2)(typia@7.6.4(@samchon/openapi@2.4.1)(typescript@5.8.2))(vite@6.2.1(jiti@1.21.7)(yaml@2.6.1))
       '@sveltejs/adapter-auto':
         specifier: ^4.0.0
         version: 4.0.0(@sveltejs/kit@2.19.0(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.22.6)(vite@6.2.1(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.22.6)(vite@6.2.1(jiti@1.21.7)(yaml@2.6.1)))
@@ -423,8 +423,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@ryoppippi/unplugin-typia@1.2.0':
-    resolution: {integrity: sha512-TlrqL2WQie2HvSqJpmKPXrFsNPbMwU5Jw2Asx+E3E3Fuyya5mN1lqaeILwSZLmkCOMTQLazIrTWNOGs0V6XL6A==}
+  '@ryoppippi/unplugin-typia@2.0.3':
+    resolution: {integrity: sha512-1kEqo3kQzf+2YchQ27p654zUQU68yue6JTUR6VmECsOKgAOnAOOKib+3MCVtnMw8AhzqUGtf8c83mQcXIZ5Mew==}
+    peerDependencies:
+      svelte: ^5.0.0
+      typescript: '>=4.8.0 <5.9.0'
+      typia: '>=8.0.0 <9.0.0'
+      vite: '>=3.0.0'
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+      vite:
+        optional: true
 
   '@samchon/openapi@2.4.1':
     resolution: {integrity: sha512-xynHEJJGAzmHDhc46NzROOs1qCVu0i02tqe5JxMRsiiq1fjeFnOltZomrHfKYoX6HPsfPtEOuWmbZAdprc5A9g==}
@@ -674,8 +684,11 @@ packages:
   confbox@0.1.8:
     resolution: {integrity: sha512-RMtmw0iFkeR4YV+fUOSucriAQNb9g8zFR52MWCtl+cCZOFRNL6zeB395vPzFhEjjn4fMxXudmELnl/KF/WrK6w==}
 
-  consola@3.2.3:
-    resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
+  confbox@0.2.1:
+    resolution: {integrity: sha512-hkT3yDPFbs95mNCy1+7qNKC6Pro+/ibzYxtM2iqEigpf0sVw+bg4Zh9/snjsBcf990vfIsg5+1U7VyiyBb3etg==}
+
+  consola@3.4.0:
+    resolution: {integrity: sha512-EiPU8G6dQG0GFHNR8ljnZFki/8a+cQwEQ+7wpxdChl02Q8HXlwEZWD5lqAF8vC2sEC3Tehr8hy7vErz88LHyUA==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   cookie@0.6.0:
@@ -795,6 +808,9 @@ packages:
   expect-type@1.2.0:
     resolution: {integrity: sha512-80F22aiJ3GLyVnS/B3HzgR6RelZVumzj9jkL0Rhz4h0xYbNW9PjlQz5h3J/SShErbXBc295vseR4/MIbVmUbeA==}
     engines: {node: '>=12.0.0'}
+
+  exsolve@1.0.4:
+    resolution: {integrity: sha512-xsZH6PXaER4XoV+NiT7JHp1bJodJVT+cxeSH1G0f0tlT0lJqYuHUP3bUx2HtfTDvOagMINYp8rsqusxud3RXhw==}
 
   external-editor@3.1.0:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
@@ -1019,9 +1035,6 @@ packages:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  mlly@1.7.3:
-    resolution: {integrity: sha512-xUsx5n/mN0uQf4V548PKQ+YShA4/IW0KI1dZhrNrPCLG+xizETbHTkOa1f8/xut9JRPp8kQuMnz0oqwkTiLo/A==}
-
   mlly@1.7.4:
     resolution: {integrity: sha512-qmdSIPC4bDJXgZTCR7XosJiNKySV7O215tsPtDN9iEO/7q/76b/ijtgRu/+epFXSJhijtTCCGp3DWS549P3xKw==}
 
@@ -1113,9 +1126,6 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
-  pathe@1.1.2:
-    resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
-
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
@@ -1146,11 +1156,11 @@ packages:
     resolution: {integrity: sha512-Ie9z/WINcxxLp27BKOCHGde4ITq9UklYKDzVo1nhk5sqGEXU3FpkwP5GM2voTGJkGd9B3Otl+Q4uwSOeSUtOBA==}
     engines: {node: '>=14.16'}
 
-  pkg-types@1.2.1:
-    resolution: {integrity: sha512-sQoqa8alT3nHjGuTjuKgOnvjo4cljkufdtLMnO2LBP/wRwuDlo1tkaEdMxCRhyGRPacv/ztlZgDPm2b7FAmEvw==}
-
   pkg-types@1.3.1:
     resolution: {integrity: sha512-/Jm5M4RvtBFVkKWRu2BLUTNP8/M2a+UwuAX+ae4770q1qVGtfjG+WTCupoZixokjmHiry8uI+dlY8KXYV5HVVQ==}
+
+  pkg-types@2.1.0:
+    resolution: {integrity: sha512-wmJwA+8ihJixSoHKxZJRBQG1oY8Yr9pGLzRmSsNms0iNWyHHAlZCa7mmKiFR10YPZuz/2k169JiS/inOjBCZ2A==}
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -1489,11 +1499,6 @@ packages:
   typescript-svelte-plugin@0.3.46:
     resolution: {integrity: sha512-6GUb+nafp00/WEOKztBddyCsrJNHbIqO32kPfhDFybWqhj89AxUhwedVE2g4rug2E48d40AgG2jLYW611esJAg==}
 
-  typescript@5.6.3:
-    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@5.8.2:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
@@ -1531,10 +1536,6 @@ packages:
         optional: true
       vue-template-es2015-compiler:
         optional: true
-
-  unplugin@1.16.1:
-    resolution: {integrity: sha512-4/u/j4FrCKdi17jaxuJA0jClGxB1AvU2hw/IuayPc4ay1XGaJs/rbb4v5WKwAjNifjmXK9PIFyuPiaK8azyR9w==}
-    engines: {node: '>=14.0.0'}
 
   unplugin@2.2.0:
     resolution: {integrity: sha512-m1ekpSwuOT5hxkJeZGRxO7gXbXT3gF26NjQ7GdVHoLoF8/nopLcd/QfPigpCy7i51oFHiRJg/CyHhj4vs2+KGw==}
@@ -1895,35 +1896,25 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.35.0':
     optional: true
 
-  '@ryoppippi/unplugin-typia@1.2.0(@samchon/openapi@2.4.1)(jiti@1.21.7)(rollup@4.35.0)(yaml@2.6.1)':
+  '@ryoppippi/unplugin-typia@2.0.3(rollup@4.35.0)(svelte@5.22.6)(typescript@5.8.2)(typia@7.6.4(@samchon/openapi@2.4.1)(typescript@5.8.2))(vite@6.2.1(jiti@1.21.7)(yaml@2.6.1))':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.35.0)
-      consola: 3.2.3
+      consola: 3.4.0
       defu: 6.1.4
       diff-match-patch: 1.0.5
       find-cache-dir: 5.0.0
       magic-string: 0.30.17
-      pathe: 1.1.2
-      pkg-types: 1.2.1
+      pathe: 2.0.3
+      pkg-types: 2.1.0
       type-fest: 4.37.0
-      typescript: 5.6.3
-      typia: 7.6.4(@samchon/openapi@2.4.1)(typescript@5.6.3)
-      unplugin: 1.16.1
+      typescript: 5.8.2
+      typia: 7.6.4(@samchon/openapi@2.4.1)(typescript@5.8.2)
+      unplugin: 2.2.0
+    optionalDependencies:
+      svelte: 5.22.6
       vite: 6.2.1(jiti@1.21.7)(yaml@2.6.1)
     transitivePeerDependencies:
-      - '@samchon/openapi'
-      - '@types/node'
-      - jiti
-      - less
-      - lightningcss
       - rollup
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - terser
-      - tsx
-      - yaml
 
   '@samchon/openapi@2.4.1': {}
 
@@ -2175,7 +2166,9 @@ snapshots:
 
   confbox@0.1.8: {}
 
-  consola@3.2.3: {}
+  confbox@0.2.1: {}
+
+  consola@3.4.0: {}
 
   cookie@0.6.0: {}
 
@@ -2278,6 +2271,8 @@ snapshots:
       '@types/estree': 1.0.6
 
   expect-type@1.2.0: {}
+
+  exsolve@1.0.4: {}
 
   external-editor@3.1.0:
     dependencies:
@@ -2489,13 +2484,6 @@ snapshots:
 
   minipass@7.1.2: {}
 
-  mlly@1.7.3:
-    dependencies:
-      acorn: 8.14.1
-      pathe: 1.1.2
-      pkg-types: 1.2.1
-      ufo: 1.5.4
-
   mlly@1.7.4:
     dependencies:
       acorn: 8.14.1
@@ -2580,8 +2568,6 @@ snapshots:
       lru-cache: 10.4.3
       minipass: 7.1.2
 
-  pathe@1.1.2: {}
-
   pathe@2.0.3: {}
 
   pathval@2.0.0: {}
@@ -2600,16 +2586,16 @@ snapshots:
     dependencies:
       find-up: 6.3.0
 
-  pkg-types@1.2.1:
-    dependencies:
-      confbox: 0.1.8
-      mlly: 1.7.3
-      pathe: 1.1.2
-
   pkg-types@1.3.1:
     dependencies:
       confbox: 0.1.8
       mlly: 1.7.4
+      pathe: 2.0.3
+
+  pkg-types@2.1.0:
+    dependencies:
+      confbox: 0.2.1
+      exsolve: 1.0.4
       pathe: 2.0.3
 
   postcss-import@15.1.0(postcss@8.5.3):
@@ -2936,19 +2922,7 @@ snapshots:
       - svelte
       - typescript
 
-  typescript@5.6.3: {}
-
   typescript@5.8.2: {}
-
-  typia@7.6.4(@samchon/openapi@2.4.1)(typescript@5.6.3):
-    dependencies:
-      '@samchon/openapi': 2.4.1
-      commander: 10.0.1
-      comment-json: 4.2.5
-      inquirer: 8.2.6
-      package-manager-detector: 0.2.9
-      randexp: 0.5.3
-      typescript: 5.6.3
 
   typia@7.6.4(@samchon/openapi@2.4.1)(typescript@5.8.2):
     dependencies:
@@ -2973,11 +2947,6 @@ snapshots:
       svelte: 5.22.6
     transitivePeerDependencies:
       - supports-color
-
-  unplugin@1.16.1:
-    dependencies:
-      acorn: 8.14.1
-      webpack-virtual-modules: 0.6.2
 
   unplugin@2.2.0:
     dependencies:
