@@ -17,7 +17,7 @@ importers:
         version: 1.2.1
       '@ryoppippi/unplugin-typia':
         specifier: ^2.0.0
-        version: 2.0.3(rollup@4.37.0)(svelte@5.25.2)(typescript@5.8.2)(typia@8.0.3(@samchon/openapi@2.4.1)(typescript@5.8.2))(vite@6.2.3(jiti@1.21.7)(yaml@2.6.1))
+        version: 2.1.0(rollup@4.37.0)(svelte@5.25.2)(typescript@5.8.2)(typia@8.0.3(@samchon/openapi@2.4.1)(typescript@5.8.2))(vite@6.2.3(jiti@1.21.7)(yaml@2.6.1))
       '@sveltejs/adapter-auto':
         specifier: ^5.0.0
         version: 5.0.0(@sveltejs/kit@2.20.2(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.25.2)(vite@6.2.3(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.25.2)(vite@6.2.3(jiti@1.21.7)(yaml@2.6.1)))
@@ -428,8 +428,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@ryoppippi/unplugin-typia@2.0.3':
-    resolution: {integrity: sha512-1kEqo3kQzf+2YchQ27p654zUQU68yue6JTUR6VmECsOKgAOnAOOKib+3MCVtnMw8AhzqUGtf8c83mQcXIZ5Mew==}
+  '@ryoppippi/unplugin-typia@2.1.0':
+    resolution: {integrity: sha512-OfY0EJl/xC9u8jZkNPejX31jSe91KA2KvFLUF6914XWS0LlCadqn+K+WgEbU/RZ0AqEkVETZ5OvebdV1Umt1Xg==}
     peerDependencies:
       svelte: ^5.0.0
       typescript: '>=4.8.0 <5.9.0'
@@ -695,8 +695,8 @@ packages:
   confbox@0.2.1:
     resolution: {integrity: sha512-hkT3yDPFbs95mNCy1+7qNKC6Pro+/ibzYxtM2iqEigpf0sVw+bg4Zh9/snjsBcf990vfIsg5+1U7VyiyBb3etg==}
 
-  consola@3.4.0:
-    resolution: {integrity: sha512-EiPU8G6dQG0GFHNR8ljnZFki/8a+cQwEQ+7wpxdChl02Q8HXlwEZWD5lqAF8vC2sEC3Tehr8hy7vErz88LHyUA==}
+  consola@3.4.2:
+    resolution: {integrity: sha512-5IKcdX0nnYavi6G7TtOhwkYzyjfJlatbjMjuLSfE2kYT5pMDOilZ4OvMhi637CcDICTmz3wARPoyhqyX1Y+XvA==}
     engines: {node: ^14.18.0 || >=16.10.0}
 
   cookie@0.6.0:
@@ -754,8 +754,8 @@ packages:
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
 
-  diff-match-patch@1.0.5:
-    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+  diff-match-patch-es@1.0.1:
+    resolution: {integrity: sha512-KhSofrZDERg/NE6Nd+TK53knp2qz0o2Ix8rhkXd3Chfm7Wlo58Eq/juNmkyS6bS+3xS26L3Pstz3BdY/q+e9UQ==}
 
   diff@7.0.0:
     resolution: {integrity: sha512-PJWHUb1RFevKCwaFA9RlG5tCd+FO5iRh9A8HEtkmBH2Li03iJriB6m6JIN4rGz3K3JLawI7/veA1xzRKP6ISBw==}
@@ -1552,6 +1552,10 @@ packages:
     resolution: {integrity: sha512-m1ekpSwuOT5hxkJeZGRxO7gXbXT3gF26NjQ7GdVHoLoF8/nopLcd/QfPigpCy7i51oFHiRJg/CyHhj4vs2+KGw==}
     engines: {node: '>=18.12.0'}
 
+  unplugin@2.2.2:
+    resolution: {integrity: sha512-Qp+iiD+qCRnUek+nDoYvtWX7tfnYyXsrOnJ452FRTgOyKmTM7TUJ3l+PLPJOOWPTUyKISKp4isC5JJPSXUjGgw==}
+    engines: {node: '>=18.12.0'}
+
   update-browserslist-db@1.1.3:
     resolution: {integrity: sha512-UxhIZQ+QInVdunkDAaiazvvT/+fXL5Osr0JZlJulepYu6Jd7qJtDZjlur0emRlT71EN3ScPoE7gvsuIKKNavKw==}
     hasBin: true
@@ -1680,8 +1684,8 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
-  yocto-queue@1.1.1:
-    resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
+  yocto-queue@1.2.1:
+    resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
   zimmerframe@1.1.2:
@@ -1910,12 +1914,12 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.37.0':
     optional: true
 
-  '@ryoppippi/unplugin-typia@2.0.3(rollup@4.37.0)(svelte@5.25.2)(typescript@5.8.2)(typia@8.0.3(@samchon/openapi@2.4.1)(typescript@5.8.2))(vite@6.2.3(jiti@1.21.7)(yaml@2.6.1))':
+  '@ryoppippi/unplugin-typia@2.1.0(rollup@4.37.0)(svelte@5.25.2)(typescript@5.8.2)(typia@8.0.3(@samchon/openapi@2.4.1)(typescript@5.8.2))(vite@6.2.3(jiti@1.21.7)(yaml@2.6.1))':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.37.0)
-      consola: 3.4.0
+      consola: 3.4.2
       defu: 6.1.4
-      diff-match-patch: 1.0.5
+      diff-match-patch-es: 1.0.1
       find-cache-dir: 5.0.0
       magic-string: 0.30.17
       pathe: 2.0.3
@@ -1923,7 +1927,7 @@ snapshots:
       type-fest: 4.37.0
       typescript: 5.8.2
       typia: 8.0.3(@samchon/openapi@2.4.1)(typescript@5.8.2)
-      unplugin: 2.2.0
+      unplugin: 2.2.2
     optionalDependencies:
       svelte: 5.25.2
       vite: 6.2.3(jiti@1.21.7)(yaml@2.6.1)
@@ -2184,7 +2188,7 @@ snapshots:
 
   confbox@0.2.1: {}
 
-  consola@3.4.0: {}
+  consola@3.4.2: {}
 
   cookie@0.6.0: {}
 
@@ -2222,7 +2226,7 @@ snapshots:
 
   didyoumean@1.2.2: {}
 
-  diff-match-patch@1.0.5: {}
+  diff-match-patch-es@1.0.1: {}
 
   diff@7.0.0: {}
 
@@ -2558,7 +2562,7 @@ snapshots:
 
   p-limit@4.0.0:
     dependencies:
-      yocto-queue: 1.1.1
+      yocto-queue: 1.2.1
 
   p-locate@6.0.0:
     dependencies:
@@ -2974,6 +2978,11 @@ snapshots:
       acorn: 8.14.1
       webpack-virtual-modules: 0.6.2
 
+  unplugin@2.2.2:
+    dependencies:
+      acorn: 8.14.1
+      webpack-virtual-modules: 0.6.2
+
   update-browserslist-db@1.1.3(browserslist@4.24.4):
     dependencies:
       browserslist: 4.24.4
@@ -3092,6 +3101,6 @@ snapshots:
 
   yaml@2.6.1: {}
 
-  yocto-queue@1.1.1: {}
+  yocto-queue@1.2.1: {}
 
   zimmerframe@1.1.2: {}
