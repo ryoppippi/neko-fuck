@@ -41,7 +41,7 @@ importers:
         version: 3.0.0
       daisyui:
         specifier: ^5.0.0
-        version: 5.0.12
+        version: 5.0.13
       delay:
         specifier: ^6.0.0
         version: 6.0.0
@@ -712,8 +712,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  daisyui@5.0.12:
-    resolution: {integrity: sha512-01DU0eYBcHgPtuf5fxcrkGkIN6/Uyaqmkle5Yo3ZyW9YVAu036ALZbjv2KH5euvUbeQ4r9q3gAarGcf7Tywhng==}
+  daisyui@5.0.13:
+    resolution: {integrity: sha512-ZYQgZhfMqyFNh4aIzcsILzuErBbp1/tfUIs18/D3oKuJgmfiuPf1KUZzvoGjc8f2/JK0LWZh+BAYSVtWZq2awQ==}
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
@@ -2197,7 +2197,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  daisyui@5.0.12: {}
+  daisyui@5.0.13: {}
 
   debug@4.4.0:
     dependencies:
