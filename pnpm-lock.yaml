@@ -20,13 +20,13 @@ importers:
         version: 2.2.1(rollup@4.40.1)(svelte@5.28.2)(typescript@5.8.3)(typia@8.2.0(@samchon/openapi@2.4.1)(typescript@5.8.3))(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
-        version: 6.0.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))
+        version: 6.0.0(@sveltejs/kit@2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))
       '@sveltejs/adapter-static':
         specifier: ^3.0.8
-        version: 3.0.8(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))
+        version: 3.0.8(@sveltejs/kit@2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))
       '@sveltejs/kit':
         specifier: ^2.16.1
-        version: 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
+        version: 2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^5.0.3
         version: 5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
@@ -41,7 +41,7 @@ importers:
         version: 3.0.0
       daisyui:
         specifier: ^5.0.0
-        version: 5.0.32
+        version: 5.0.35
       delay:
         specifier: ^6.0.0
         version: 6.0.0
@@ -65,7 +65,7 @@ importers:
         version: 5.28.2
       svelte-check:
         specifier: ^4.1.4
-        version: 4.1.6(picomatch@4.0.2)(svelte@5.28.2)(typescript@5.8.3)
+        version: 4.1.7(picomatch@4.0.2)(svelte@5.28.2)(typescript@5.8.3)
       svelte-html-event:
         specifier: ^0.0.6
         version: 0.0.6(svelte@5.28.2)(typescript@5.8.3)
@@ -459,8 +459,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.20.7':
-    resolution: {integrity: sha512-dVbLMubpJJSLI4OYB+yWYNHGAhgc2bVevWuBjDj8jFUXIJOAnLwYP3vsmtcgoxNGUXoq0rHS5f7MFCsryb6nzg==}
+  '@sveltejs/kit@2.20.8':
+    resolution: {integrity: sha512-ep9qTxL7WALhfm0kFecL3VHeuNew8IccbYGqv5TqL/KSqWRKzEgDG8blNlIu1CkLTTua/kHjI+f5T8eCmWIxKw==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -712,8 +712,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  daisyui@5.0.32:
-    resolution: {integrity: sha512-fdcfLdyxApqX33tITX6M2YXeYsw+SARZi57dfo0OHB7ay8R5f6zZX2A5WITn6Gnx/Bvl+HEByXAVzFVFBsIrmA==}
+  daisyui@5.0.35:
+    resolution: {integrity: sha512-AWi11n/x5++mps55jcwrBf0Lmip1euWY0FYcH/05SFGmoqrU7S7/aIUWaiaeqlJ5EcmEZ/7zEY73aOxMv6hcIg==}
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
@@ -1425,8 +1425,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  svelte-check@4.1.6:
-    resolution: {integrity: sha512-P7w/6tdSfk3zEVvfsgrp3h3DFC75jCdZjTQvgGJtjPORs1n7/v2VMPIoty3PWv7jnfEm3x0G/p9wH4pecTb0Wg==}
+  svelte-check@4.1.7:
+    resolution: {integrity: sha512-1jX4BzXrQJhC/Jt3SqYf6Ntu//vmfc6VWp07JkRfK2nn+22yIblspVUo96gzMkg0Zov8lQicxhxsMzOctwcMQQ==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -1949,16 +1949,16 @@ snapshots:
     dependencies:
       acorn: 8.14.1
 
-  '@sveltejs/adapter-auto@6.0.0(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))':
+  '@sveltejs/adapter-auto@6.0.0(@sveltejs/kit@2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))':
     dependencies:
-      '@sveltejs/kit': 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
+      '@sveltejs/kit': 2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
       import-meta-resolve: 4.1.0
 
-  '@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))':
+  '@sveltejs/adapter-static@3.0.8(@sveltejs/kit@2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))':
     dependencies:
-      '@sveltejs/kit': 2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
+      '@sveltejs/kit': 2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
 
-  '@sveltejs/kit@2.20.7(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))':
+  '@sveltejs/kit@2.20.8(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.28.2)(vite@6.3.4(jiti@1.21.7)(yaml@2.6.1))
       '@types/cookie': 0.6.0
@@ -2209,7 +2209,7 @@ snapshots:
 
   cssesc@3.0.0: {}
 
-  daisyui@5.0.32: {}
+  daisyui@5.0.35: {}
 
   debug@4.4.0:
     dependencies:
@@ -2835,7 +2835,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@4.1.6(picomatch@4.0.2)(svelte@5.28.2)(typescript@5.8.3):
+  svelte-check@4.1.7(picomatch@4.0.2)(svelte@5.28.2)(typescript@5.8.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.3
