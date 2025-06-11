@@ -43,7 +43,7 @@
 		"vitest": "^3.0.4"
 	},
 	"type": "module",
-	"packageManager": "pnpm@10.11.1",
+	"packageManager": "pnpm@10.12.1",
 	"dependencies": {
 		"@qnighy/metaflow": "npm:@jsr/qnighy__metaflow@^0.1.0"
 	}
