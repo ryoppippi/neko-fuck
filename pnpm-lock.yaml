@@ -17,7 +17,7 @@ importers:
         version: 1.2.1
       '@ryoppippi/unplugin-typia':
         specifier: ^2.0.0
-        version: 2.6.5(rollup@4.44.2)(svelte@5.35.2)(typescript@5.8.3)(typia@8.2.0(@samchon/openapi@2.4.1)(typescript@5.8.3))(vite@7.0.2(jiti@1.21.7)(yaml@2.6.1))
+        version: 2.6.5(rollup@4.44.2)(svelte@5.35.2)(typescript@5.8.3)(typia@9.5.0(typescript@5.8.3))(vite@7.0.2(jiti@1.21.7)(yaml@2.6.1))
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
         version: 6.0.1(@sveltejs/kit@2.22.2(@sveltejs/vite-plugin-svelte@5.1.0(svelte@5.35.2)(vite@7.0.2(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.35.2)(vite@7.0.2(jiti@1.21.7)(yaml@2.6.1)))
@@ -88,8 +88,8 @@ importers:
         specifier: ^0.3.45
         version: 0.3.48(svelte@5.35.2)(typescript@5.8.3)
       typia:
-        specifier: ^8.0.0
-        version: 8.2.0(@samchon/openapi@2.4.1)(typescript@5.8.3)
+        specifier: ^9.0.0
+        version: 9.5.0(typescript@5.8.3)
       unplugin-icons:
         specifier: ^22.0.0
         version: 22.1.0(svelte@5.35.2)
@@ -451,8 +451,11 @@ packages:
       vite:
         optional: true
 
-  '@samchon/openapi@2.4.1':
-    resolution: {integrity: sha512-xynHEJJGAzmHDhc46NzROOs1qCVu0i02tqe5JxMRsiiq1fjeFnOltZomrHfKYoX6HPsfPtEOuWmbZAdprc5A9g==}
+  '@samchon/openapi@4.5.0':
+    resolution: {integrity: sha512-zowWJBjoKC7PUjHGIGUz6Ka3UFkvHagJ/LrdW8hGMp+4JlKmyuN9BPggK+VnH5bf8V68fPqSGVLZppcFQDBNPQ==}
+
+  '@standard-schema/spec@1.0.0':
+    resolution: {integrity: sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==}
 
   '@sveltejs/acorn-typescript@1.0.5':
     resolution: {integrity: sha512-IwQk4yfwLdibDlrXVE04jTZYlLnwsTT2PIOQQGNLWfjavGifnk1JD1LcZjZaBTRcxZu2FfPfNLOE04DSu9lqtQ==}
@@ -1548,11 +1551,10 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  typia@8.2.0:
-    resolution: {integrity: sha512-DAQl9CLItDwMd4k4HnaExxv6wjBFLW04WqGBQEnOpylq2YmZsM6HTj4Bfxxp3wtgAsMXZTugAdQRPsFOxMiRrQ==}
+  typia@9.5.0:
+    resolution: {integrity: sha512-HVQ5BR95NAmlEO+NGRqKz+EOEXktAqjKdelhms1rIj68mdDI1TzA7MUfNa4D6Ois95PcDdCgq9gwZiO+HXFC/g==}
     hasBin: true
     peerDependencies:
-      '@samchon/openapi': '>=3.3.0 <4.0.0'
       typescript: '>=4.8.0 <5.9.0'
 
   ufo@1.5.4:
@@ -1967,7 +1969,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.44.2':
     optional: true
 
-  '@ryoppippi/unplugin-typia@2.6.5(rollup@4.44.2)(svelte@5.35.2)(typescript@5.8.3)(typia@8.2.0(@samchon/openapi@2.4.1)(typescript@5.8.3))(vite@7.0.2(jiti@1.21.7)(yaml@2.6.1))':
+  '@ryoppippi/unplugin-typia@2.6.5(rollup@4.44.2)(svelte@5.35.2)(typescript@5.8.3)(typia@9.5.0(typescript@5.8.3))(vite@7.0.2(jiti@1.21.7)(yaml@2.6.1))':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.44.2)
       bun-only: 0.0.1
@@ -1980,7 +1982,7 @@ snapshots:
       pkg-types: 2.1.0
       type-fest: 4.41.0
       typescript: 5.8.3
-      typia: 8.2.0(@samchon/openapi@2.4.1)(typescript@5.8.3)
+      typia: 9.5.0(typescript@5.8.3)
       unplugin: 2.3.5
     optionalDependencies:
       svelte: 5.35.2
@@ -1988,7 +1990,9 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  '@samchon/openapi@2.4.1': {}
+  '@samchon/openapi@4.5.0': {}
+
+  '@standard-schema/spec@1.0.0': {}
 
   '@sveltejs/acorn-typescript@1.0.5(acorn@8.15.0)':
     dependencies:
@@ -3027,9 +3031,10 @@ snapshots:
 
   typescript@5.8.3: {}
 
-  typia@8.2.0(@samchon/openapi@2.4.1)(typescript@5.8.3):
+  typia@9.5.0(typescript@5.8.3):
     dependencies:
-      '@samchon/openapi': 2.4.1
+      '@samchon/openapi': 4.5.0
+      '@standard-schema/spec': 1.0.0
       commander: 10.0.1
       comment-json: 4.2.5
       inquirer: 8.2.6
