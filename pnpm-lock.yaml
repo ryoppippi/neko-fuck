@@ -17,7 +17,7 @@ importers:
         version: 1.2.1
       '@ryoppippi/unplugin-typia':
         specifier: ^2.0.0
-        version: 2.6.5(rollup@4.45.3)(svelte@5.37.1)(typescript@5.8.3)(typia@9.6.0(typescript@5.8.3))(vite@7.0.6(jiti@1.21.7)(yaml@2.6.1))
+        version: 2.6.5(rollup@4.45.3)(svelte@5.37.1)(typescript@5.9.2)(typia@9.6.0(typescript@5.9.2))(vite@7.0.6(jiti@1.21.7)(yaml@2.6.1))
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
         version: 6.0.1(@sveltejs/kit@2.26.1(@sveltejs/vite-plugin-svelte@6.1.0(svelte@5.37.1)(vite@7.0.6(jiti@1.21.7)(yaml@2.6.1)))(svelte@5.37.1)(vite@7.0.6(jiti@1.21.7)(yaml@2.6.1)))
@@ -65,10 +65,10 @@ importers:
         version: 5.37.1
       svelte-check:
         specifier: ^4.1.4
-        version: 4.3.0(picomatch@4.0.3)(svelte@5.37.1)(typescript@5.8.3)
+        version: 4.3.0(picomatch@4.0.3)(svelte@5.37.1)(typescript@5.9.2)
       svelte-html-event:
         specifier: ^0.0.6
-        version: 0.0.6(svelte@5.37.1)(typescript@5.8.3)
+        version: 0.0.6(svelte@5.37.1)(typescript@5.9.2)
       tailwindcss:
         specifier: ^3.4.3
         version: 3.4.17
@@ -83,13 +83,13 @@ importers:
         version: 4.41.0
       typescript:
         specifier: ^5.7.3
-        version: 5.8.3
+        version: 5.9.2
       typescript-svelte-plugin:
         specifier: ^0.3.45
-        version: 0.3.49(svelte@5.37.1)(typescript@5.8.3)
+        version: 0.3.49(svelte@5.37.1)(typescript@5.9.2)
       typia:
         specifier: ^9.0.0
-        version: 9.6.0(typescript@5.8.3)
+        version: 9.6.0(typescript@5.9.2)
       unplugin-icons:
         specifier: ^22.0.0
         version: 22.2.0(svelte@5.37.1)
@@ -1559,8 +1559,8 @@ packages:
   typescript-svelte-plugin@0.3.49:
     resolution: {integrity: sha512-KwQEtfjVR8Nomv1yVAvCaVTCGhklLlk3TDHNAUW/pibesqmbtHMZcSi7SyR/gpYH8wWgNDljAZHTflo47XWgQg==}
 
-  typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+  typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -1966,7 +1966,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.45.3':
     optional: true
 
-  '@ryoppippi/unplugin-typia@2.6.5(rollup@4.45.3)(svelte@5.37.1)(typescript@5.8.3)(typia@9.6.0(typescript@5.8.3))(vite@7.0.6(jiti@1.21.7)(yaml@2.6.1))':
+  '@ryoppippi/unplugin-typia@2.6.5(rollup@4.45.3)(svelte@5.37.1)(typescript@5.9.2)(typia@9.6.0(typescript@5.9.2))(vite@7.0.6(jiti@1.21.7)(yaml@2.6.1))':
     dependencies:
       '@rollup/pluginutils': 5.1.4(rollup@4.45.3)
       bun-only: 0.0.1
@@ -1978,8 +1978,8 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 2.1.0
       type-fest: 4.41.0
-      typescript: 5.8.3
-      typia: 9.6.0(typescript@5.8.3)
+      typescript: 5.9.2
+      typia: 9.6.0(typescript@5.9.2)
       unplugin: 2.3.5
     optionalDependencies:
       svelte: 5.37.1
@@ -2907,7 +2907,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-check@4.3.0(picomatch@4.0.3)(svelte@5.37.1)(typescript@5.8.3):
+  svelte-check@4.3.0(picomatch@4.0.3)(svelte@5.37.1)(typescript@5.9.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.29
       chokidar: 4.0.3
@@ -2915,21 +2915,21 @@ snapshots:
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.37.1
-      typescript: 5.8.3
+      typescript: 5.9.2
     transitivePeerDependencies:
       - picomatch
 
-  svelte-html-event@0.0.6(svelte@5.37.1)(typescript@5.8.3):
+  svelte-html-event@0.0.6(svelte@5.37.1)(typescript@5.9.2):
     dependencies:
       svelte: 5.37.1
-      typescript: 5.8.3
+      typescript: 5.9.2
 
-  svelte2tsx@0.7.41(svelte@5.37.1)(typescript@5.8.3):
+  svelte2tsx@0.7.41(svelte@5.37.1)(typescript@5.9.2):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 5.37.1
-      typescript: 5.8.3
+      typescript: 5.9.2
 
   svelte@5.37.1:
     dependencies:
@@ -3029,17 +3029,17 @@ snapshots:
 
   type-fest@4.41.0: {}
 
-  typescript-svelte-plugin@0.3.49(svelte@5.37.1)(typescript@5.8.3):
+  typescript-svelte-plugin@0.3.49(svelte@5.37.1)(typescript@5.9.2):
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.4
-      svelte2tsx: 0.7.41(svelte@5.37.1)(typescript@5.8.3)
+      svelte2tsx: 0.7.41(svelte@5.37.1)(typescript@5.9.2)
     transitivePeerDependencies:
       - svelte
       - typescript
 
-  typescript@5.8.3: {}
+  typescript@5.9.2: {}
 
-  typia@9.6.0(typescript@5.8.3):
+  typia@9.6.0(typescript@5.9.2):
     dependencies:
       '@samchon/openapi': 4.6.0
       '@standard-schema/spec': 1.0.0
@@ -3048,7 +3048,7 @@ snapshots:
       inquirer: 8.2.6
       package-manager-detector: 0.2.11
       randexp: 0.5.3
-      typescript: 5.8.3
+      typescript: 5.9.2
 
   ufo@1.6.1: {}
 
